@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="version" content="1.5.0">
+<meta name="version" content="1.6.0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BreakPoint Insight | Independent Water Science and Engineering</title>
 <meta name="description" content="Independent water science, engineering, technical assurance and decision intelligence for difficult, high-consequence infrastructure decisions.">
@@ -347,7 +347,7 @@
     <div class="engage">
       <div class="eng"><h3>Diagnostic</h3><p>Forensic investigation and root-cause diagnosis of operational, process and performance problems.</p><div class="out">Mechanism, evidence, confidence, corrective options ranked.</div></div>
       <div class="eng"><h3>Red Team</h3><p>Independent technical challenge of a design, technology or investment proposition.</p><div class="out">Finding, evidence, confidence, consequence, required action.</div></div>
-      <div class="eng"><h3>Capacity</h3><p>The operating envelope within which a plant can reliably meet its obligations, rather than only whether it can reach a flow.</p><div class="out">Nominal, theoretical, demonstrated, constrained and resilient capacity.</div></div>
+      <div class="eng"><h3><a href="/engagements/capacity" style="text-decoration:none">Capacity</a></h3><p>The operating envelope within which a plant can reliably meet its obligations, rather than only whether it can reach a flow.</p><div class="out">Nominal, theoretical, demonstrated, constrained and resilient capacity. <a href="/engagements/capacity" style="color:var(--teal)">How we do it</a></div></div>
       <div class="eng"><h3>Evidence</h3><p>Prospective. Build the evidence, assumption and uncertainty framework a major decision needs before it is made.</p><div class="out">A decision record a board or regulator can interrogate line by line.</div></div>
       <div class="eng"><h3>Optimise</h3><p>Operational-data-led process optimisation.</p><div class="out">Quantified opportunities in dosing, energy, throughput and compliance margin.</div></div>
       <div class="eng"><h3>Decision Audit</h3><p>Retrospective. Test whether the evidence already assembled actually supports the decision being requested.</p><div class="out">Decision claim, evidence, assumptions, uncertainty, alternatives, robustness.</div></div>
@@ -652,12 +652,13 @@
     <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Delivered in Australia through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>.</span>
     <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
-  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.5.0 · 7 Sep 2026</span></div>
+  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.6.0 · 7 Sep 2026</span></div>
 </footer>
 
 <script>
 (function(){
   var f=document.getElementById('enquiry'); if(!f) return;
+  try{ if(document.referrer.indexOf('/engagements/capacity')>-1){ var sel=document.getElementById('f-type'); if(sel) sel.value='Plant capacity or operating envelope'; } }catch(e){}
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var btn=document.getElementById('form-btn'),err=document.getElementById('form-err'),ok=document.getElementById('form-ok'),fields=document.getElementById('form-fields');

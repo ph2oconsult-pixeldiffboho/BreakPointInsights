@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.6.0 · 7 Sep 2026
+- Engagement page /engagements/capacity: five capacities, envelope, two lenses, six stages, three tiers, pattern-level experience, engagement sheet download. Linked from the Capacity engagement card; enquiry form pre-selects capacity when arriving from the page.
+
 ## 1.5.0 · 7 Sep 2026
 - Brendan Gladman: full biography page from CV (career, credentials, roles, twelve projects, publications); homepage card rewritten; three of his projects added to the Experience section; About intro rebalanced.
 
