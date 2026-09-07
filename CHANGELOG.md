@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.3.3 · 7 Sep 2026
+- Contact card: "Founded in Australia, serving the world."
+
 ## 1.3.2 · 7 Sep 2026
 - Proof band: "FRSC, MPhil" item replaced with "Physics, maths, chemistry: reaction kinetics, hydraulics, mass transfer, applied statistics".
 
