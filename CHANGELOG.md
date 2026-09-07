@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.8.0 · 8 Sep 2026
+- Charles Taylor: portrait, six projects with scale and outcome, first-author publication, location, phone and LinkedIn. No placeholders remain on his page. Denitrification case added to the homepage Experience section; UK phone in the contact card.
+
 ## 1.7.5 · 7 Sep 2026
 - About diagram: intersection restored to "Decision intelligence" with "evidence-calibrated judgement" as the descriptor.
 
