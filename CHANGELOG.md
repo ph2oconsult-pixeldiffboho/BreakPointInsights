@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.5.0 · 7 Sep 2026
+- Brendan Gladman: full biography page from CV (career, credentials, roles, twelve projects, publications); homepage card rewritten; three of his projects added to the Experience section; About intro rebalanced.
+
 ## 1.4.0 · 7 Sep 2026
 - Casework section: /casework/ index and first case study, "The pipeline is the reactor", with evidence-class table; linked from the Experience section and mobile menu.
 
