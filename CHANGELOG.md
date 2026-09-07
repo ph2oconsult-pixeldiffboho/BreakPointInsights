@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.2.1 · 7 Sep 2026
+- Commissioning audit fixes: skip-to-content link and main landmark on every page; custom 404 page; JSON-LD structured data (organisation, persons, articles); og:locale; honeypot hidden from assistive tech; contrast fixes on version line and amber graphic labels; larger tap targets on inline links.
+
 ## 1.2.0 · 7 Sep 2026
 - Version stamp in footer and page metadata; this changelog.
 - Partners diagram rebuilt with HTML labels so "Decision intelligence" cannot clip in any font.

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="version" content="1.2.0">
+<meta name="version" content="1.2.1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>From pattern to mechanism | BreakPoint Insight</title>
 <meta name="description" content="Data science exposes patterns. Process science asks whether a pattern has a physically credible mechanism. Decision Intelligence is doing both, in that order.">
+<meta property="og:locale" content="en_AU">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="BreakPoint Insight">
 <meta property="og:title" content="From pattern to mechanism">
@@ -38,6 +39,8 @@
   p{margin:0 0 1em}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
   :focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:6px;z-index:50;text-decoration:none;font-weight:600}
+  .skip:focus{left:12px}
   /* NAV */
   nav{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
@@ -78,7 +81,7 @@
   .two{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px)}
   @media(max-width:860px){.two{grid-template-columns:1fr}}
   .more{margin-top:32px;font-size:15px;font-weight:500}
-  .more a{color:var(--teal);text-decoration:none;border-bottom:1px solid currentColor}
+  .more a{color:var(--teal);text-decoration:none;border-bottom:1px solid currentColor;display:inline-block;padding:6px 0}
   /* PROMISES + PROBLEMS */
   .promises{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1px solid var(--ink)}
   .promise{padding:28px 28px 8px 0;border-right:1px solid var(--line)}
@@ -160,7 +163,7 @@
   .ins{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;padding:22px 0;border-bottom:1px solid var(--line)}
   .ins h3{font-family:var(--display);font-size:22px;font-weight:500}
   .ins p{font-size:15px;color:var(--ink-2);margin:0}
-  .ins .soon{font-size:13px;color:var(--mute);font-weight:500}
+  .ins .soon{font-size:13px;color:var(--mute);font-weight:500;display:inline-block;padding:8px 8px 8px 0;min-height:24px}
   @media(max-width:760px){.ins{grid-template-columns:1fr;gap:6px}}
   /* PARTNERS */
   .partners{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);margin-top:48px}
@@ -175,13 +178,14 @@
   /* CONTACT (dark) */
   .contact h2{max-width:18ch;color:#fff}
   .contact-card{padding:32px;border:1.5px solid rgba(255,255,255,.35);border-radius:8px;font-size:17px;color:#fff}
-  .contact-card a{text-decoration:none;font-weight:600;color:#fff}
+  .contact-card a{text-decoration:none;font-weight:600;color:#fff;display:inline-block;padding:3px 0}
   .contact-card a:hover{text-decoration:underline}
   .contact-card div{margin-bottom:12px}
   .contact-card small{display:block;color:#8FA0A9;font-size:14px;margin-bottom:2px}
   footer{border-top:1px solid var(--line);padding:32px 0;font-size:14px;color:var(--mute)}
   footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  footer .ver{font-size:12px;color:#9AA6AD}
+  footer a{display:inline-block;padding:4px 0}
+  footer .ver{font-size:12px;color:var(--mute)}
   /* motion */
   .draw{stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 2.6s cubic-bezier(.6,0,.2,1) .2s forwards}
   .pt{opacity:0;animation:pop .5s ease 2.5s forwards}
@@ -217,8 +221,10 @@
   .next h3 a{text-decoration:none}
   .next p{color:var(--ink-2);max-width:60ch;margin:8px 0 0}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"From pattern to mechanism","author":[{"@type":"Person","name":"Brendan Gladman"},{"@type":"Person","name":"Peter Hillis"}],"publisher":{"@type":"Organization","name":"BreakPoint Insight","url":"https://BREAKPOINT_DOMAIN/"},"datePublished":"2026-09-07","inLanguage":"en-AU","mainEntityOfPage":"https://BREAKPOINT_DOMAIN/insight-pattern-to-mechanism"}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <nav>
   <div class="wrap">
     <a class="brand" href="/" aria-label="BreakPoint Insight home">
@@ -238,6 +244,7 @@
     </div>
   </div>
 </nav>
+<main id="main">
 <header class="art-head"><div class="wrap">
   <div class="kicker">Insights · Data interpretation</div>
   <h1>From pattern to mechanism.</h1>
@@ -284,12 +291,13 @@
   <h3><a href="/insight-not-demonstrated">Not demonstrated is not the same as adequate</a></h3>
   <p>Back to the start of the series: what do we actually know?</p>
 </div></section>
+</main>
 <footer>
   <div class="wrap">
     <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Delivered in Australia through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>.</span>
     <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
-  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.2.0 · 7 Sep 2026</span></div>
+  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.2.1 · 7 Sep 2026</span></div>
 </footer>
 </body>
 </html>
