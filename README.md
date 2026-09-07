@@ -34,6 +34,9 @@ First push: `git push -u origin main`
 
 Then, import the repository in Vercel (Framework preset: Other; no build command; output directory: `.`), add the domain under Project → Settings → Domains, and set the DNS records Vercel shows at the registrar.
 
+## Versioning
+Every page carries `<meta name="version">` and a footer line "Site version X.Y.Z". `VERSION` holds the current number and `CHANGELOG.md` lists what changed. When you change the site: bump `VERSION`, update the version string in every `.html` (search for "Site version"), add a changelog entry, commit, push. Then check the footer of the live site to confirm the deployment.
+
 ## Editing
 Each page is self-contained (CSS inline). Shared elements (nav, footer, tokens) are duplicated per page; change them in every file or keep them in sync with a search-and-replace. Design tokens are frozen; see the `:root` block at the top of each file.
 
