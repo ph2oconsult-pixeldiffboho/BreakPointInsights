@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What demonstrated capacity actually means | BreakPoint Insight</title>
-<meta name="description" content="Nominal, theoretical, demonstrated, constrained and resilient capacity, and why a plant’s capability is an operating envelope rather than a design number.">
+<title>From pattern to mechanism | BreakPoint Insight</title>
+<meta name="description" content="Data science exposes patterns. Process science asks whether a pattern has a physically credible mechanism. Decision Intelligence is doing both, in that order.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="BreakPoint Insight">
-<meta property="og:title" content="What demonstrated capacity actually means">
-<meta property="og:description" content="Nominal, theoretical, demonstrated, constrained and resilient capacity, and why a plant’s capability is an operating envelope rather than a design number.">
-<meta property="og:image" content="https://BREAKPOINT_DOMAIN/assets/og-insight-demonstrated-capacity.png">
-<meta property="og:url" content="https://BREAKPOINT_DOMAIN/insight-demonstrated-capacity">
+<meta property="og:title" content="From pattern to mechanism">
+<meta property="og:description" content="Data science exposes patterns. Process science asks whether a pattern has a physically credible mechanism. Decision Intelligence is doing both, in that order.">
+<meta property="og:image" content="https://BREAKPOINT_DOMAIN/assets/og-insight-pattern-to-mechanism.png">
+<meta property="og:url" content="https://BREAKPOINT_DOMAIN/insight-pattern-to-mechanism">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What demonstrated capacity actually means">
-<meta name="twitter:description" content="Nominal, theoretical, demonstrated, constrained and resilient capacity, and why a plant’s capability is an operating envelope rather than a design number.">
+<meta name="twitter:title" content="From pattern to mechanism">
+<meta name="twitter:description" content="Data science exposes patterns. Process science asks whether a pattern has a physically credible mechanism. Decision Intelligence is doing both, in that order.">
 <meta property='article:author' content='Peter Hillis'><meta property='article:published_time' content='2026-09'>
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="https://BREAKPOINT_DOMAIN/insight-demonstrated-capacity">
+<link rel="canonical" href="https://BREAKPOINT_DOMAIN/insight-pattern-to-mechanism">
 <meta name="theme-color" content="#F7F8F5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -237,81 +237,50 @@
   </div>
 </nav>
 <header class="art-head"><div class="wrap">
-  <div class="kicker">Insights · Asset capability</div>
-  <h1>What “demonstrated capacity” actually means.</h1>
+  <div class="kicker">Insights · Data interpretation</div>
+  <h1>From pattern to mechanism.</h1>
   <div class="by"><b>Peter Hillis</b>, Founder and Principal · September 2026</div>
 </div></header>
 <article class="art"><div class="wrap">
   <div class="body">
-<p>Ask a plant what its capacity is and you will get a number. Ask five people at the utility the same question and you may get five different numbers, each of them correct. The one on the nameplate. The one in the licence. The one the process engineer calculated. The one operations will actually run to. The one the board was told when the last upgrade was approved.</p>
-<p>They differ because "capacity" is doing the work of at least five distinct concepts, and most capacity studies never separate them. This piece sets out the five, explains why the gaps between them are where the money is, and describes how we go about determining the one that matters.</p>
-<h2>Five numbers that get confused</h2>
-<p><strong>Nominal capacity</strong> is the design flow. It is the figure on the drawings and in the licence, and it usually came from a design guide loading rate applied to a tank volume or a filter area at the time the plant was built. It says something about what the designer intended. It says nothing about what the plant does.</p>
-<p><strong>Theoretical capacity</strong> is what the process calculations say each unit could handle under stated conditions. It is calculated, usually competently, and usually for one influent condition. Its limitation is that it is built from individual unit calculations, each of which assumes the units upstream and downstream are behaving. Real plants are coupled systems. A clarifier that can theoretically take the flow may not be able to take it while the filters are backwashing and the recycle is running.</p>
-<p><strong>Demonstrated capacity</strong> is what the plant has actually achieved, sustained, while meeting its obligations. It is measured. It is also, in my experience, almost never written down. The operating record contains it, but somebody has to go and find the periods where flow was high, water quality was hard, and the plant still met its targets, and then ask what was happening at every stage during those periods. That is a different job from reading the SCADA maximum.</p>
-<p><strong>Constrained capacity</strong> is the flow at which the first binding constraint bites. The binding constraint is rarely the unit everyone worries about. It is the sludge handling system that cannot keep up with the solids produced under flood turbidity. It is the chemical dosing pump that runs out of turndown at low flow, not high. It is the disinfection contact time that falls below the required Ct at peak flow with the reservoir drawn down. It is the operator who cannot physically manage the number of backwashes per shift. Constrained capacity is where the first real-world limitation becomes binding. It will often be lower than the theoretical figure, because the theoretical calculation does not capture every coupled constraint.</p>
-<p><strong>Resilient capacity</strong> is the flow the plant can sustain when something has gone wrong: a unit out of service, a raw water event, an equipment failure, a staff shortage. It is the number that determines whether the plant meets its obligations in the week that matters, which is never the design week.</p>
-<h2>Why the gaps matter</h2>
-<blockquote class="pull">Genuine headroom is valuable because every additional megalitre a day can defer the point at which new capacity must be built.</blockquote>
-<p>The gap between nominal and theoretical is where old plants are underrated and new plants are oversold. The gap between theoretical and demonstrated is where the plant’s real behaviour lives and where most capacity disputes are decided. The gap between demonstrated and constrained is the plant’s remaining headroom, and it is the single most valuable number in a capital plan, because every additional megalitre a day of headroom that can be shown to exist can defer the point at which new capacity must be built. The gap between constrained and resilient is what the utility is actually risking.</p>
-<p>A study that reports one number reports none of these gaps. It cannot, because the gaps only appear when the five numbers are determined separately.</p>
-<p>Consider two hypothetical plants. The first is nominally rated at a hundred megalitres a day, but its operating record only shows sustained compliant operation to about seventy-eight under its difficult source-water conditions, because the solids handling has never kept up beyond that under high turbidity and operations have quietly learnt not to push it. The second is rated at thirty-five and has run reliably above forty-five for years, with the record to prove it, while the utility plans an upgrade on the assumption that thirty-five is the ceiling. In both cases the number in the planning documents is the nominal one. In both cases the decision is being made on the least informative of the five.</p>
-<h2>Capacity is an envelope</h2>
-<p>The reason a single number cannot describe capacity is that a plant does not have a maximum flow. It has a region, in the space of flow and influent condition, within which it can reliably meet its treatment obligations. Outside that region it fails, and it fails for different reasons at different edges.</p>
-<p>Picture flow on one axis and influent load on the other: turbidity, colour, algae, ammonia, whatever drives the process. The plant’s operating envelope is the area it can occupy. At the high-flow, low-load edge the binding constraint is usually hydraulic. At the high-load edge it is usually solids, or chemistry, or contact time. At the corner where both are high it may be something else entirely, often the residuals system or the operators’ ability to respond.</p>
-<p>Drawing that envelope is the real capacity study. Each edge has a constraint that governs it, and each constraint has an evidence class. Some edges are measured, because the plant has been there and the record shows what happened. Some are calculated. Some are assumed, and the assumption should be marked as such with the evidence that would resolve it. The finished envelope tells the utility how much the plant can do, what it would take to push each edge outward, and which edge is worth pushing.</p>
-<figure class="fig"><svg viewBox="0 0 560 330" role="img" aria-label="Operating envelope: flow against influent load, with the constraint governing each edge and the evidence class of each edge">
-        <defs>
-          <style>.ax{font-family:Inter,sans-serif;font-size:12px;fill:#6B7780}.lb{font-family:Inter,sans-serif;font-size:12.5px;fill:#46545D}.bd{font-family:"Bricolage Grotesque",sans-serif;font-size:10.5px;font-weight:700}</style>
-        </defs>
-        <line x1="60" y1="270" x2="530" y2="270" stroke="#102131" stroke-width="1.2"/>
-        <line x1="60" y1="270" x2="60" y2="30" stroke="#102131" stroke-width="1.2"/>
-        <text x="295" y="300" text-anchor="middle" class="ax">flow</text>
-        <text x="22" y="150" text-anchor="middle" transform="rotate(-90 22 150)" class="ax">influent load</text>
-        <rect x="60" y="60" width="420" height="210" fill="#236B70" fill-opacity=".06"/>
-        <text x="472" y="76" text-anchor="end" class="lb">nominal</text>
-        <path d="M 60 270 L 60 120 L 200 120 C 250 120, 285 150, 330 175 C 355 190, 372 230, 380 270 Z" fill="#236B70" fill-opacity=".22"/>
-        <path d="M 60 120 L 200 120" fill="none" stroke="#236B70" stroke-width="2.2"/>
-        <path d="M 200 120 C 250 120, 285 150, 330 175" fill="none" stroke="#236B70" stroke-width="2.2" stroke-dasharray="6 4"/>
-        <path d="M 330 175 C 355 190, 372 230, 380 270" fill="none" stroke="#236B70" stroke-width="2.2"/>
-        <rect x="90" y="185" width="150" height="60" rx="4" fill="#fff" fill-opacity=".55"/>
-        <text x="165" y="209" text-anchor="middle" class="lb" style="fill:#174D52;font-weight:600">current operating region</text>
-        <text x="165" y="229" text-anchor="middle" class="lb" style="fill:#174D52">demonstrated</text>
-        <text x="130" y="108" class="lb">solids and residuals constraint</text>
-        <text x="300" y="148" class="lb">chemistry and contact time</text>
-        <text x="396" y="226" class="lb">hydraulic constraint</text>
-        <text x="396" y="262" class="lb" style="fill:#6B7780">operational limit</text>
-        <g class="bd"><rect x="112" y="112" width="18" height="16" rx="3" fill="#102131"/><text x="121" y="124" text-anchor="middle" fill="#fff">M</text></g>
-        <g class="bd"><rect x="262" y="128" width="20" height="16" rx="3" fill="#3C4A55"/><text x="272" y="140" text-anchor="middle" fill="#fff">Mo</text></g>
-        <g class="bd"><rect x="352" y="196" width="18" height="16" rx="3" fill="#236B70"/><text x="361" y="208" text-anchor="middle" fill="#fff">C</text></g>
-        <g class="bd"><rect x="372" y="244" width="18" height="16" rx="3" fill="none" stroke="#D18A1B" stroke-width="1.5"/><text x="381" y="256" text-anchor="middle" fill="#D18A1B">A</text></g>
-        <line x1="380" y1="270" x2="380" y2="60" stroke="#D18A1B" stroke-width="1.5" stroke-dasharray="4 4"/>
-        <circle cx="380" cy="270" r="6" fill="#D18A1B"/>
-        <text x="388" y="52" fill="#D18A1B" class="lb" style="font-weight:600">binding constraint</text>
-        <g class="ax"><text x="60" y="322">M measured · C calculated · Mo modelled · A assumed</text></g>
-      </svg><figcaption>An operating envelope. Each edge carries the constraint that governs it and how that edge is known: measured, calculated, modelled or assumed.</figcaption></figure>
-<h2>How we determine it</h2>
-<blockquote class="pull">We start with the operating record, not the design.</blockquote>
-<p>The method is not exotic. It is a discipline about what counts as evidence and in what order it is consulted.</p>
-<p>We start with the operating record, not the design. The record is the only source of demonstrated capacity, and it contains more than most utilities realise. Flow, water quality, chemical use, sludge production, backwash frequency, energy: in combination, over a few years, they show where the plant has been and what it did there. The first task is to reconstruct the periods of highest stress and establish, unit by unit, what was binding.</p>
-<p>We then do the calculations, but as a check on the record rather than a substitute for it. Where the calculated capacity of a unit exceeds what the plant has demonstrated, the interesting question is why. Sometimes the plant has never been asked. Sometimes there is a constraint the calculation does not see.</p>
-<p>We look explicitly for the constraints that unit calculations miss: the coupled ones. Recycle streams, residuals handling, chemical storage and delivery, instrumentation range, control loop tuning, staffing, and the plant’s physical ability to be operated at the required intensity. These are where constrained capacity usually lives.</p>
-<p>And we separate resilience from routine. What does the envelope look like with the largest unit out of service? With the raw water at its historical worst? Both at once? That is the number the business case should be tested against.</p>
-<p>The output is a capacity envelope with the binding constraint named at each edge, the evidence class of each stated, and the assumptions that would change the picture flagged with their severity. That is what we mean by BreakPoint Capacity.</p>
-<h2>What to ask of any capacity figure</h2>
-<p>If you are being given a capacity number rather than producing one, three questions will tell you which of the five you are looking at.</p>
-<p>Which of the five is this? If the answer is "the design capacity," you have the nominal figure and should treat it as a statement of intent.</p>
-<p>What is the binding constraint at that flow, and how do you know? If nobody can name it, the figure is theoretical and the coupled constraints have not been examined.</p>
-<p>When did the plant last operate there, and what happened? If the answer is "never," the figure has not been demonstrated, and no amount of calculation makes it so.</p>
-<p>A plant can reach a flow and still fail to do its job. The question is never whether it can reach the flow. It is where, across the conditions it will actually face, it can reliably meet its obligations. That is an envelope, and it takes an envelope to describe it.</p>
+<p>Water utilities are not short of data. A mid-sized treatment plant generates tens of thousands of readings a day, and behind the SCADA historian sit years of laboratory results, maintenance records, chemical deliveries, energy bills and operator logs. What utilities are short of is the step between the data and a decision, and that step is not a data problem.</p>
+<p>Data science exposes patterns. Process science asks whether a pattern has a physically credible mechanism, whether the alternative explanations survive, and what test would tell them apart. Decision Intelligence, as we practise it, is the discipline of doing both in one team, in that order.</p>
+<h2>A pattern is a question, not an answer</h2>
+<blockquote class="pull">A pattern is a question, not an answer.</blockquote>
+<p>Consider a chloraminated distribution system in which the residual at a downstream sample point has been falling faster than expected. An analyst plots residual against every other variable in the historian and finds a strong inverse relationship with nitrite. When nitrite rises, residual falls. The correlation is real, the chart is clean, and the conclusion writes itself: nitrification is consuming the chloramine.</p>
+<p>It may be. But the same pattern is consistent with at least three other stories. Nitrite could be a consequence of the low residual rather than its cause, appearing because the residual dropped for some other reason and let the bacteria grow. Both could be driven by a third variable, such as detention time in a reservoir that lengthens in low demand, producing both decay and nitrite in parallel. Or the apparent relationship could arise from the measurement system itself, in which case the residual has not fallen as far as the record says and the plant is chasing an instrument.</p>
+<p>Each of these is capable of producing the observed pattern. The chart alone cannot reliably choose between them. The data science has done its job by finding the pattern; what it cannot do is say what the pattern means, because meaning lives in the physics and chemistry of the system, not in the correlation.</p>
+<h2>Mechanism is what makes it engineering</h2>
+<p>To choose between the stories you have to ask what each one would predict beyond the chart, and go and look.</p>
+<p>If nitrification is the cause, the relationship should be strongest where detention time is longest, nitrite should lead residual in time, and free ammonia should be present upstream to feed it. If nitrite is a consequence, residual should fall first and nitrite follow. If a reservoir is driving both, the pattern should track demand and reservoir level and weaken when the reservoir is bypassed. If the measurement is the mechanism, a grab sample by a different method should disagree with the online reading, and the disagreement should track the same conditions.</p>
+<p>Every one of those is a testable prediction, and most can be tested from data the utility already holds. The ones that cannot point to the measurement worth making. That is the transition from pattern to mechanism: the correlation generates hypotheses, the physics ranks them, and the discriminating test is chosen to separate the ones that remain.</p>
+<p>This is not a subtle point, but it is routinely skipped, because a strong correlation feels like an answer and the pressure in an operational problem is to act. Acting on a pattern without a mechanism is how utilities end up with chemical dosing changes that make no difference, capital works aimed at the wrong unit, and, most expensively, confidence that a problem has been solved when it has only been correlated.</p>
+<h2>What the process scientist brings</h2>
+<p>The reason this needs a process scientist rather than a better algorithm is that mechanism is domain knowledge. Knowing that an online residual measurement can be affected by analyser chemistry, sample conditioning, calibration and matrix effects, that monochloramine decay has an autocatalytic pathway, that a particular reservoir stratifies in summer, that a dosing pump’s turndown limits how low a ratio can actually be controlled: none of that is in the historian, and all of it determines which hypothesis survives.</p>
+<p>Domain knowledge also tells you which patterns not to chase. A dataset with enough variables will always contain correlations, and most of them mean nothing. A process scientist looking at the same list of correlations will recognise most of them as artefacts of shared drivers, sampling schedules or instrument behaviour, and will go straight to the two or three that could be causal. That triage is worth more than any amount of additional modelling.</p>
+<h2>What the data scientist brings</h2>
+<blockquote class="pull">A pattern without a mechanism is not evidence of anything in particular. A mechanism without a pattern is an opinion.</blockquote>
+<p>It cuts both ways. Process scientists have their own failure mode, which is to know the mechanism before looking at the data and then find it there. Four decades of experience is a strong prior, and strong priors are exactly what a well-designed data analysis is meant to test.</p>
+<p>Good data work protects against that. It insists that the pattern be shown before it is explained, that the explanation be tested against the periods where it should fail, and that the alternative explanations be given the same chance. It also finds things the mechanism-first mind would never look for: the relationship nobody predicted, the regime change in the record that marks when something in the plant was altered, the diurnal cycle in a variable that was assumed constant.</p>
+<p>Neither discipline is sufficient. A pattern without a mechanism is not evidence of anything in particular. A mechanism without a pattern is an opinion.</p>
+<h2>The sequence</h2>
+<p>This is not a second BreakPoint method. It is what Frame, Evidence, Reason, Challenge, Decide looks like when the evidence happens to be operational data. In practice the work follows a short sequence that we use on every Decision Intelligence engagement.</p>
+<p><strong>Data to pattern.</strong> Assemble the record, clean it honestly, and find the relationships that are actually there. This is the analyst’s craft and it is not trivial: the same historian export often contains two instruments’ worth of readings under one tag name, and the first pattern found is frequently an artefact of that.</p>
+<p><strong>Pattern to hypotheses.</strong> For each pattern that could matter, write down every mechanism that would produce it, including the boring ones: instrument, sampling, a change in operation nobody logged.</p>
+<p><strong>Hypotheses to test.</strong> For each hypothesis, state what else would be true if it were the cause, and check. Most can be checked against data already held. The remainder define the measurement to make next.</p>
+<p><strong>Test to decision.</strong> With the surviving mechanism established, and its evidence class stated, the decision is usually obvious. Change the dose, fix the analyser, bypass the reservoir, or, often enough, do nothing, because the pattern turned out to be harmless.</p>
+<p>The output of that sequence is not a dashboard. It is a short statement of what is physically happening in the plant, how confident we are, what evidence that rests on, and what to do about it.</p>
+<h2>Why this matters more as the data grows</h2>
+<blockquote class="pull">Data reveals the pattern. Process science tests the mechanism. The decision belongs to whoever has done both.</blockquote>
+<p>The volume of operational data is increasing far faster than the number of people who can interpret it physically. That gap is where the risk sits. It is now easy to produce a plausible-looking analysis of a treatment plant with no understanding of the plant at all, and the more polished the analysis, the harder it is to see that the mechanism step has been skipped.</p>
+<p>The corrective is not less analysis. It is the discipline of asking, of every pattern that is about to drive a decision, what the mechanism is and how we know. Data reveals the pattern. Process science tests the mechanism. The decision belongs to whoever has done both.</p>
   </div>
-  
-  <p class="endnote">BreakPoint Capacity is a named BreakPoint Insight engagement that determines a plant’s nominal, theoretical, demonstrated, constrained and resilient capacity, with the binding constraint and evidence class at each edge of the operating envelope. <a href="/#engagements">See the engagement.</a></p>
+  <p class="endnote">Decision Intelligence is one of the five BreakPoint Insight practices, and BreakPoint Optimise is its named engagement. Both combine operational data analysis with physical interpretation, in that sequence: data to pattern to mechanism to test to decision. <a href="/#engagements">See the Decision Intelligence practice and the Optimise engagement.</a></p>
 </div></article>
 <section class="next"><div class="wrap">
   <div class="kicker">Read next</div>
-  <h3><a href="/insight-load-bearing-assumption">The load-bearing assumption</a></h3>
-  <p>Most assumptions cannot change a decision. A few can. Finding them is the most valuable thing a reviewer does.</p>
+  <h3><a href="/insight-not-demonstrated">Not demonstrated is not the same as adequate</a></h3>
+  <p>Back to the start of the series: what do we actually know?</p>
 </div></section>
 <footer>
   <div class="wrap">
