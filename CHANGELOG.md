@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.7.5 · 7 Sep 2026
+- About diagram: intersection restored to "Decision intelligence" with "evidence-calibrated judgement" as the descriptor.
+
 ## 1.7.4 · 7 Sep 2026
 - Charles Taylor: business email in contact card and bio; Scienqua stated as on the DWI List of Consultants for Regulation 31.
 
