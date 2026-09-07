@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.3.4 · 7 Sep 2026
+- Contact card: "Founded in Australia. Serving the world." as an italic tagline on its own line; WhatsApp icon spacing restored.
+
 ## 1.3.3 · 7 Sep 2026
 - Contact card: "Founded in Australia, serving the world."
 
