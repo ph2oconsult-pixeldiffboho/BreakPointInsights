@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.4.0 · 7 Sep 2026
+- Casework section: /casework/ index and first case study, "The pipeline is the reactor", with evidence-class table; linked from the Experience section and mobile menu.
+
 ## 1.3.4 · 7 Sep 2026
 - Contact card: "Founded in Australia. Serving the world." as an italic tagline on its own line; WhatsApp icon spacing restored.
 
