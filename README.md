@@ -5,7 +5,7 @@ Static site. No build step. Deployed on Vercel from this repository.
 ## Structure
 - `index.html` — homepage
 - `peter-hillis.html`, `brendan-gladman.html` — partner biographies
-- `insight-*.html` — Insights articles
+- `insights/` — Insights archive (`insights/index.html`) and articles (`insights/<slug>.html`, served at `/insights/<slug>`)
 - `assets/` — Open Graph share images, favicon
 - `vercel.json` — clean URLs (`/peter-hillis` serves `peter-hillis.html`), cache and security headers
 - `robots.txt`, `sitemap.xml`
@@ -41,4 +41,4 @@ Every page carries `<meta name="version">` and a footer line "Site version X.Y.Z
 Each page is self-contained (CSS inline). Shared elements (nav, footer, tokens) are duplicated per page; change them in every file or keep them in sync with a search-and-replace. Design tokens are frozen; see the `:root` block at the top of each file.
 
 ## Adding an Insight
-Copy `insight-not-demonstrated.html`, replace the head metadata, kicker, title, body and "Read next" block, add an OG image to `assets/`, add the page to `sitemap.xml`, and link it from the Insights section of `index.html`.
+Copy `insights/not-demonstrated.html`, replace the head metadata, kicker, title, body and "Read next" block, add an OG image to `assets/`, add the page to `sitemap.xml`, and add a row to `insights/index.html` and, if featured, to the Insights section of `index.html`.

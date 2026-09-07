@@ -10,6 +10,11 @@
     ] }
   ],
   "redirects": [
-    { "source": "/breakpoint-website.html", "destination": "/", "permanent": true }
+    { "source": "/breakpoint-website.html", "destination": "/", "permanent": true },
+    { "source": "/insight-not-demonstrated", "destination": "/insights/not-demonstrated", "permanent": true },
+    { "source": "/insight-demonstrated-capacity", "destination": "/insights/demonstrated-capacity", "permanent": true },
+    { "source": "/insight-load-bearing-assumption", "destination": "/insights/load-bearing-assumption", "permanent": true },
+    { "source": "/insight-correct-mass-balance", "destination": "/insights/correct-mass-balance", "permanent": true },
+    { "source": "/insight-pattern-to-mechanism", "destination": "/insights/pattern-to-mechanism", "permanent": true }
   ]
 }

@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="version" content="1.2.1">
+<meta name="version" content="1.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The load-bearing assumption | BreakPoint Insight</title>
-<meta name="description" content="Most assumptions cannot change a decision. A few can. Finding them is the most valuable thing a reviewer does.">
+<title>What demonstrated capacity actually means | BreakPoint Insight</title>
+<meta name="description" content="Nominal, theoretical, demonstrated, constrained and resilient capacity, and why a plant’s capability is an operating envelope rather than a design number.">
 <meta property="og:locale" content="en_AU">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="BreakPoint Insight">
-<meta property="og:title" content="The load-bearing assumption">
-<meta property="og:description" content="Most assumptions cannot change a decision. A few can. Finding them is the most valuable thing a reviewer does.">
-<meta property="og:image" content="https://BREAKPOINT_DOMAIN/assets/og-insight-load-bearing-assumption.png">
-<meta property="og:url" content="https://BREAKPOINT_DOMAIN/insight-load-bearing-assumption">
+<meta property="og:title" content="What demonstrated capacity actually means">
+<meta property="og:description" content="Nominal, theoretical, demonstrated, constrained and resilient capacity, and why a plant’s capability is an operating envelope rather than a design number.">
+<meta property="og:image" content="https://BREAKPOINT_DOMAIN/assets/og-insights-demonstrated-capacity.png">
+<meta property="og:image:alt" content="What demonstrated capacity actually means, on the BreakPoint curve">
+<meta name="twitter:image" content="https://BREAKPOINT_DOMAIN/assets/og-insights-demonstrated-capacity.png">
+<meta property="og:url" content="https://BREAKPOINT_DOMAIN/insights/demonstrated-capacity">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The load-bearing assumption">
-<meta name="twitter:description" content="Most assumptions cannot change a decision. A few can. Finding them is the most valuable thing a reviewer does.">
+<meta name="twitter:title" content="What demonstrated capacity actually means">
+<meta name="twitter:description" content="Nominal, theoretical, demonstrated, constrained and resilient capacity, and why a plant’s capability is an operating envelope rather than a design number.">
 <meta property='article:author' content='Peter Hillis'><meta property='article:published_time' content='2026-09'>
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="https://BREAKPOINT_DOMAIN/insight-load-bearing-assumption">
+<link rel="canonical" href="https://BREAKPOINT_DOMAIN/insights/demonstrated-capacity">
 <meta name="theme-color" content="#F7F8F5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -51,6 +53,17 @@
   nav ul a:hover{color:var(--ink)}
   .nav-right{display:flex;align-items:center;gap:18px}
   .li{color:var(--ink-2);display:inline-flex}.li svg{width:22px;height:22px}.li:hover{color:var(--teal)}
+  .menu-btn{display:none;width:44px;height:44px;border:0;background:transparent;padding:10px;cursor:pointer;flex-direction:column;justify-content:center;gap:5px}
+  .menu-btn span{display:block;height:2px;background:var(--ink);border-radius:1px;transition:transform .2s,opacity .2s}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu{display:none;border-top:1px solid var(--line);background:var(--paper);padding:8px var(--pad) 20px}
+  .mobile-menu a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;font-family:var(--display);font-size:20px;font-weight:500;color:var(--ink)}
+  .mobile-menu a.mm-cta{margin-top:12px;border:1.5px solid var(--ink);border-radius:6px;text-align:center;padding:12px;font-family:var(--body);font-size:16px;font-weight:600}
+  .mobile-menu a.mm-li{border-bottom:0;font-family:var(--body);font-size:15px;color:var(--ink-2);padding-top:16px}
+  .mobile-menu:not([hidden]){display:block}
+  @media(max-width:900px){.menu-btn{display:flex}.nav-right .btn{display:none}}
   .btn{display:inline-block;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--ink);color:var(--ink);background:transparent;transition:background .15s,color .15s}
   .btn:hover{background:var(--ink);color:var(--paper)}
   .btn.solid{background:var(--ink);color:var(--paper)}
@@ -221,7 +234,7 @@
   .next h3 a{text-decoration:none}
   .next p{color:var(--ink-2);max-width:60ch;margin:8px 0 0}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"The load-bearing assumption","author":[{"@type":"Person","name":"Peter Hillis"}],"publisher":{"@type":"Organization","name":"BreakPoint Insight","url":"https://BREAKPOINT_DOMAIN/"},"datePublished":"2026-09-07","inLanguage":"en-AU","mainEntityOfPage":"https://BREAKPOINT_DOMAIN/insight-load-bearing-assumption"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What demonstrated capacity actually means","author":[{"@type":"Person","name":"Peter Hillis"}],"publisher":{"@type":"Organization","name":"BreakPoint Insight","url":"https://BREAKPOINT_DOMAIN/"},"datePublished":"2026-09-07","inLanguage":"en-AU","mainEntityOfPage":"https://BREAKPOINT_DOMAIN/insights/demonstrated-capacity"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -235,61 +248,102 @@
       <li><a href="/#services">Services</a></li>
       <li><a href="/#experience">Experience</a></li>
       <li><a href="/#products">Products</a></li>
-      <li><a href="/#insights">Insights</a></li>
+      <li><a href="/insights/">Insights</a></li>
       <li><a href="/#about">About</a></li>
     </ul>
     <div class="nav-right">
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
       <a class="li" href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener" aria-label="BreakPoint Insight on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
       <a class="btn" href="/#contact">Discuss a problem</a>
     </div>
   </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="/#services">Services</a>
+    <a href="/#experience">Experience</a>
+    <a href="/#products">Products</a>
+    <a href="/insights/">Insights</a>
+    <a href="/#about">About</a>
+    <a href="/#contact" class="mm-cta">Discuss a problem</a>
+    <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener" class="mm-li">BreakPoint Insight on LinkedIn</a>
+  </div>
 </nav>
 <main id="main">
 <header class="art-head"><div class="wrap">
-  <div class="kicker">Insights · Decision robustness</div>
-  <h1>The load-bearing assumption.</h1>
+  <div class="kicker">Insights · Asset capability</div>
+  <h1>What “demonstrated capacity” actually means.</h1>
   <div class="by"><b>Peter Hillis</b>, Founder and Principal · September 2026</div>
 </div></header>
 <article class="art"><div class="wrap">
   <div class="body">
-<p>Every design basis contains more assumptions than anyone has time to test. A concept study for a treatment plant upgrade will carry a hundred of them, some explicit, most not: influent loads, peak factors, water quality percentiles, settling characteristics, membrane flux, sludge yields, chemical doses, equipment availability, growth forecasts, discount rates. A reviewer who tries to challenge all of them produces a long list of comments and changes nothing.</p>
-<p>The purpose of technical assurance is not to eliminate uncertainty. It is to find the small number of assumptions that are capable of changing the decision, and to establish how well those particular assumptions are known. I call these the load-bearing assumptions, and finding them is the most valuable thing a reviewer can do.</p>
-<h2>Most assumptions do not matter</h2>
-<blockquote class="pull">The purpose of technical assurance is not to eliminate uncertainty. It is to find the small number of assumptions capable of changing the decision.</blockquote>
-<p>This is the point that gets lost. In a well-framed decision, most of the inputs can move across their plausible range without changing the answer. The recommended option stays the recommended option; the capacity stays adequate; the cost stays within the band the board was given. Those assumptions are real, and they should be recorded, but they are not where the risk lives.</p>
-<p>A few assumptions behave differently. Move one of them across its plausible range and the ranking of options changes, or the plant that was adequate is not, or the cost moves out of its band. These are the load-bearing ones. The decision rests on them in the way a floor rests on a beam, and the question that matters is whether the beam has been inspected.</p>
-<blockquote class="pull">Load-bearing status is not a property of the assumption. It is a property of the assumption in combination with the decision.</blockquote>
-<p>The trouble is that load-bearing status is not visible from the assumption itself. It is a property of the assumption in combination with the decision. The same peak factor might be trivial in a plant with hydraulic headroom and decisive in one without. You cannot find the load-bearing assumptions by reading the assumptions list. You find them by asking, for each one, what happens to the decision if it is wrong.</p>
-<h2>Where they hide</h2>
-<p>Some patterns recur often enough to be worth naming.</p>
-<p><strong>The assumption that fixes the constraint.</strong> In many treatment decisions one unit or one parameter becomes binding, and the assumptions that establish that constraint are the first place I look. If the clarifier is the constraint, the assumed settling velocity or solids flux is the assumption the whole capacity number rests on. If the disinfection contact tank is the constraint, it is the assumed baffling factor. Find the binding constraint and you have usually found the first load-bearing assumption.</p>
-<p><strong>The assumption inherited from a different plant.</strong> Design guide values and previous projects supply a great many inputs, and most transfer well enough. The ones that do not are the ones tied to the specific water or the specific process: an assumed coagulant dose from a plant with different natural organic matter, a sludge volume index from a plant with a different sludge age, a membrane flux from a plant with a different pretreatment. If the number came from somewhere else, ask what would have to be true here for it to transfer, and whether anyone has checked.</p>
-<p><strong>The assumption that has never been tested because the plant has never been there.</strong> A capacity assessment often extrapolates beyond the highest flow or worst water quality the plant has actually seen. Everything about the plant’s behaviour beyond that point is assumed, and the assumption is load-bearing precisely because the upgrade is intended to take the plant there.</p>
-<p><strong>The assumption that appears to be conservative.</strong> I wrote about this in the first of these pieces. A conservative assumption for one failure mode is frequently an aggressive one for another, and the direction is rarely stated. An assumed high influent load is safe for tank sizing and unsafe for the energy and chemical budget the business case rests on.</p>
-<p><strong>The assumption that is actually a decision.</strong> Some inputs that look technical are policy choices in disguise. A design horizon, a level of service, a percentile of water quality to design for: these are decisions the owner should make consciously, and when they arrive in a design basis as numbers it is usually because someone had to pick one to get on with the work. If the option ranking depends on them, they need to be put back in front of the person entitled to decide.</p>
-<h2>How to find them</h2>
-<p>The method is a structured sensitivity test, but done on the decision rather than on the model.</p>
-<p>Start by stating the decision precisely. Not "assess the upgrade" but "confirm that Option B, at the stated cost, will meet the stated obligations to the stated horizon." The sharper the decision, the easier it is to see what could overturn it.</p>
-<p>List the assumptions, including the ones that are not written down. The unwritten ones are usually the most dangerous: the assumption that the raw water will not deteriorate, that the operators will run the plant as designed, that the vendor’s performance claim holds at full scale.</p>
-<p>For each assumption, ask what plausible range it could take and what happens to the decision at each end of that range. Plausible is the operative word. It is not useful to ask what happens if the influent load doubles; it is useful to ask what happens at the ninety-fifth percentile of the record, or at the load the catchment forecast implies in fifteen years.</p>
-<p>The assumptions that change the decision somewhere in their plausible range are the load-bearing ones. In my experience there are surprisingly few, often fewer than five.</p>
-<p>For those, and only those, establish the evidence class. Measured, calculated, literature-supported, modelled, inferred, assumed, heuristic. A load-bearing assumption that is measured on this plant is a small risk. A load-bearing assumption that is inferred from another plant, or simply assumed, is where the decision is exposed, and it is where the next piece of evidence should be bought.</p>
-<h2>What to do with them</h2>
-<p>Once the load-bearing assumptions are named and classified, three things become possible that were not possible before.</p>
-<p>The reviewer can say, in one page, what the decision depends on. That page is worth more to a board than the hundred-page report behind it.</p>
-<p>The project can spend its remaining investigation budget where it changes the decision. A settling test, a pilot trial, a month of enhanced monitoring, a site visit to the plant the flux figure came from: each of these is cheap relative to the capital it protects, and each is only worth doing if the assumption it tests is load-bearing.</p>
-<p>And the decision can be made with its conditions attached. "Proceed with Option B, provided the settling characteristics assumed in the design are confirmed by testing before detailed design" is a better decision than "proceed with Option B", because it keeps the beam under inspection.</p>
-<h2>A closing thought on humility</h2>
-<blockquote class="pull">The remedy is not to trust judgement less. It is to make judgement show its working.</blockquote>
-<p>The reason this discipline matters is that experienced engineers are good at being confident and not always good at knowing which of their confident statements is doing the work. I include myself. After four decades I have a well-developed sense of what is likely to matter, and it is usually right, and the occasions when it has been wrong have all had the same shape: an assumption I regarded as background turned out to be structural.</p>
-<p>The remedy is not to trust judgement less. It is to make judgement show its working, so that the load-bearing assumptions are on the page where someone else can look at them.</p>
+<p>Ask a plant what its capacity is and you will get a number. Ask five people at the utility the same question and you may get five different numbers, each of them correct. The one on the nameplate. The one in the licence. The one the process engineer calculated. The one operations will actually run to. The one the board was told when the last upgrade was approved.</p>
+<p>They differ because "capacity" is doing the work of at least five distinct concepts, and most capacity studies never separate them. This piece sets out the five, explains why the gaps between them are where the money is, and describes how we go about determining the one that matters.</p>
+<h2>Five numbers that get confused</h2>
+<p><strong>Nominal capacity</strong> is the design flow. It is the figure on the drawings and in the licence, and it usually came from a design guide loading rate applied to a tank volume or a filter area at the time the plant was built. It says something about what the designer intended. It says nothing about what the plant does.</p>
+<p><strong>Theoretical capacity</strong> is what the process calculations say each unit could handle under stated conditions. It is calculated, usually competently, and usually for one influent condition. Its limitation is that it is built from individual unit calculations, each of which assumes the units upstream and downstream are behaving. Real plants are coupled systems. A clarifier that can theoretically take the flow may not be able to take it while the filters are backwashing and the recycle is running.</p>
+<p><strong>Demonstrated capacity</strong> is what the plant has actually achieved, sustained, while meeting its obligations. It is measured. It is also, in my experience, almost never written down. The operating record contains it, but somebody has to go and find the periods where flow was high, water quality was hard, and the plant still met its targets, and then ask what was happening at every stage during those periods. That is a different job from reading the SCADA maximum.</p>
+<p><strong>Constrained capacity</strong> is the flow at which the first binding constraint bites. The binding constraint is rarely the unit everyone worries about. It is the sludge handling system that cannot keep up with the solids produced under flood turbidity. It is the chemical dosing pump that runs out of turndown at low flow, not high. It is the disinfection contact time that falls below the required Ct at peak flow with the reservoir drawn down. It is the operator who cannot physically manage the number of backwashes per shift. Constrained capacity is where the first real-world limitation becomes binding. It will often be lower than the theoretical figure, because the theoretical calculation does not capture every coupled constraint.</p>
+<p><strong>Resilient capacity</strong> is the flow the plant can sustain when something has gone wrong: a unit out of service, a raw water event, an equipment failure, a staff shortage. It is the number that determines whether the plant meets its obligations in the week that matters, which is never the design week.</p>
+<h2>Why the gaps matter</h2>
+<blockquote class="pull">Genuine headroom is valuable because every additional megalitre a day can defer the point at which new capacity must be built.</blockquote>
+<p>The gap between nominal and theoretical is where old plants are underrated and new plants are oversold. The gap between theoretical and demonstrated is where the plant’s real behaviour lives and where most capacity disputes are decided. The gap between demonstrated and constrained is the plant’s remaining headroom, and it is the single most valuable number in a capital plan, because every additional megalitre a day of headroom that can be shown to exist can defer the point at which new capacity must be built. The gap between constrained and resilient is what the utility is actually risking.</p>
+<p>A study that reports one number reports none of these gaps. It cannot, because the gaps only appear when the five numbers are determined separately.</p>
+<p>Consider two hypothetical plants. The first is nominally rated at a hundred megalitres a day, but its operating record only shows sustained compliant operation to about seventy-eight under its difficult source-water conditions, because the solids handling has never kept up beyond that under high turbidity and operations have quietly learnt not to push it. The second is rated at thirty-five and has run reliably above forty-five for years, with the record to prove it, while the utility plans an upgrade on the assumption that thirty-five is the ceiling. In both cases the number in the planning documents is the nominal one. In both cases the decision is being made on the least informative of the five.</p>
+<h2>Capacity is an envelope</h2>
+<p>The reason a single number cannot describe capacity is that a plant does not have a maximum flow. It has a region, in the space of flow and influent condition, within which it can reliably meet its treatment obligations. Outside that region it fails, and it fails for different reasons at different edges.</p>
+<p>Picture flow on one axis and influent load on the other: turbidity, colour, algae, ammonia, whatever drives the process. The plant’s operating envelope is the area it can occupy. At the high-flow, low-load edge the binding constraint is usually hydraulic. At the high-load edge it is usually solids, or chemistry, or contact time. At the corner where both are high it may be something else entirely, often the residuals system or the operators’ ability to respond.</p>
+<p>Drawing that envelope is the real capacity study. Each edge has a constraint that governs it, and each constraint has an evidence class. Some edges are measured, because the plant has been there and the record shows what happened. Some are calculated. Some are assumed, and the assumption should be marked as such with the evidence that would resolve it. The finished envelope tells the utility how much the plant can do, what it would take to push each edge outward, and which edge is worth pushing.</p>
+<figure class="fig"><svg viewBox="0 0 560 330" role="img" aria-label="Operating envelope: flow against influent load, with the constraint governing each edge and the evidence class of each edge">
+        <defs>
+          <style>.ax{font-family:Inter,sans-serif;font-size:12px;fill:#6B7780}.lb{font-family:Inter,sans-serif;font-size:12.5px;fill:#46545D}.bd{font-family:"Bricolage Grotesque",sans-serif;font-size:10.5px;font-weight:700}</style>
+        </defs>
+        <line x1="60" y1="270" x2="530" y2="270" stroke="#102131" stroke-width="1.2"/>
+        <line x1="60" y1="270" x2="60" y2="30" stroke="#102131" stroke-width="1.2"/>
+        <text x="295" y="300" text-anchor="middle" class="ax">flow</text>
+        <text x="22" y="150" text-anchor="middle" transform="rotate(-90 22 150)" class="ax">influent load</text>
+        <rect x="60" y="60" width="420" height="210" fill="#236B70" fill-opacity=".06"/>
+        <text x="472" y="76" text-anchor="end" class="lb">nominal</text>
+        <path d="M 60 270 L 60 120 L 200 120 C 250 120, 285 150, 330 175 C 355 190, 372 230, 380 270 Z" fill="#236B70" fill-opacity=".22"/>
+        <path d="M 60 120 L 200 120" fill="none" stroke="#236B70" stroke-width="2.2"/>
+        <path d="M 200 120 C 250 120, 285 150, 330 175" fill="none" stroke="#236B70" stroke-width="2.2" stroke-dasharray="6 4"/>
+        <path d="M 330 175 C 355 190, 372 230, 380 270" fill="none" stroke="#236B70" stroke-width="2.2"/>
+        <rect x="90" y="185" width="150" height="60" rx="4" fill="#fff" fill-opacity=".55"/>
+        <text x="165" y="209" text-anchor="middle" class="lb" style="fill:#174D52;font-weight:600">current operating region</text>
+        <text x="165" y="229" text-anchor="middle" class="lb" style="fill:#174D52">demonstrated</text>
+        <text x="130" y="108" class="lb">solids and residuals constraint</text>
+        <text x="300" y="148" class="lb">chemistry and contact time</text>
+        <text x="396" y="226" class="lb">hydraulic constraint</text>
+        <text x="396" y="262" class="lb" style="fill:#6B7780">operational limit</text>
+        <g class="bd"><rect x="112" y="112" width="18" height="16" rx="3" fill="#102131"/><text x="121" y="124" text-anchor="middle" fill="#fff">M</text></g>
+        <g class="bd"><rect x="262" y="128" width="20" height="16" rx="3" fill="#3C4A55"/><text x="272" y="140" text-anchor="middle" fill="#fff">Mo</text></g>
+        <g class="bd"><rect x="352" y="196" width="18" height="16" rx="3" fill="#236B70"/><text x="361" y="208" text-anchor="middle" fill="#fff">C</text></g>
+        <g class="bd"><rect x="372" y="244" width="18" height="16" rx="3" fill="none" stroke="#D18A1B" stroke-width="1.5"/><text x="381" y="256" text-anchor="middle" fill="#9A6410">A</text></g>
+        <line x1="380" y1="270" x2="380" y2="60" stroke="#D18A1B" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <circle cx="380" cy="270" r="6" fill="#D18A1B"/>
+        <text x="388" y="52" fill="#9A6410" class="lb" style="font-weight:600">binding constraint</text>
+        <g class="ax"><text x="60" y="322">M measured · C calculated · Mo modelled · A assumed</text></g>
+      </svg><figcaption>An operating envelope. Each edge carries the constraint that governs it and how that edge is known: measured, calculated, modelled or assumed.</figcaption></figure>
+<h2>How we determine it</h2>
+<blockquote class="pull">We start with the operating record, not the design.</blockquote>
+<p>The method is not exotic. It is a discipline about what counts as evidence and in what order it is consulted.</p>
+<p>We start with the operating record, not the design. The record is the only source of demonstrated capacity, and it contains more than most utilities realise. Flow, water quality, chemical use, sludge production, backwash frequency, energy: in combination, over a few years, they show where the plant has been and what it did there. The first task is to reconstruct the periods of highest stress and establish, unit by unit, what was binding.</p>
+<p>We then do the calculations, but as a check on the record rather than a substitute for it. Where the calculated capacity of a unit exceeds what the plant has demonstrated, the interesting question is why. Sometimes the plant has never been asked. Sometimes there is a constraint the calculation does not see.</p>
+<p>We look explicitly for the constraints that unit calculations miss: the coupled ones. Recycle streams, residuals handling, chemical storage and delivery, instrumentation range, control loop tuning, staffing, and the plant’s physical ability to be operated at the required intensity. These are where constrained capacity usually lives.</p>
+<p>And we separate resilience from routine. What does the envelope look like with the largest unit out of service? With the raw water at its historical worst? Both at once? That is the number the business case should be tested against.</p>
+<p>The output is a capacity envelope with the binding constraint named at each edge, the evidence class of each stated, and the assumptions that would change the picture flagged with their severity. That is what we mean by BreakPoint Capacity.</p>
+<h2>What to ask of any capacity figure</h2>
+<p>If you are being given a capacity number rather than producing one, three questions will tell you which of the five you are looking at.</p>
+<p>Which of the five is this? If the answer is "the design capacity," you have the nominal figure and should treat it as a statement of intent.</p>
+<p>What is the binding constraint at that flow, and how do you know? If nobody can name it, the figure is theoretical and the coupled constraints have not been examined.</p>
+<p>When did the plant last operate there, and what happened? If the answer is "never," the figure has not been demonstrated, and no amount of calculation makes it so.</p>
+<p>A plant can reach a flow and still fail to do its job. The question is never whether it can reach the flow. It is where, across the conditions it will actually face, it can reliably meet its obligations. That is an envelope, and it takes an envelope to describe it.</p>
   </div>
-  <p class="endnote">BreakPoint Red Team and BreakPoint Evidence are named BreakPoint Insight engagements. Both identify the load-bearing assumptions in a technical proposition and return, for each, its evidence class, its consequence and the evidence that would resolve it. <a href="/#engagements">See the Red Team and Evidence engagements.</a></p>
+  
+  <p class="endnote">BreakPoint Capacity is a named BreakPoint Insight engagement that determines a plant’s nominal, theoretical, demonstrated, constrained and resilient capacity, with the binding constraint and evidence class at each edge of the operating envelope. <a href="/#engagements">See the engagement.</a></p>
 </div></article>
 <section class="next"><div class="wrap">
   <div class="kicker">Read next</div>
-  <h3><a href="/insight-correct-mass-balance">When a correct mass balance gives the wrong engineering answer</a></h3>
-  <p>Arithmetic that closes and a plant that doesn’t: five ways a correct balance misleads.</p>
+  <h3><a href="/insights/load-bearing-assumption">The load-bearing assumption</a></h3>
+  <p>Most assumptions cannot change a decision. A few can. Finding them is the most valuable thing a reviewer does.</p>
 </div></section>
 </main>
 <footer>
@@ -297,7 +351,14 @@
     <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Delivered in Australia through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>.</span>
     <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
-  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.2.1 · 7 Sep 2026</span></div>
+  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.3.0 · 7 Sep 2026</span></div>
 </footer>
+<script>
+(function(){var b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');if(!b||!m)return;
+b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.setAttribute('aria-label',o?'Open menu':'Close menu');if(o){m.setAttribute('hidden','')}else{m.removeAttribute('hidden')}});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){b.setAttribute('aria-expanded','false');m.setAttribute('hidden','')})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.getAttribute('aria-expanded')==='true'){b.click();b.focus()}});
+})();
+</script>
 </body>
 </html>
