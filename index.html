@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BreakPoint Insight | Independent Water Science and Engineering</title>
+<meta name="description" content="Independent water science, engineering, technical assurance and decision intelligence for difficult, high-consequence infrastructure decisions.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BreakPoint Insight">
+<meta property="og:title" content="BreakPoint Insight | Independent Water Science and Engineering">
+<meta property="og:description" content="Independent water science, engineering, technical assurance and decision intelligence for difficult, high-consequence infrastructure decisions.">
+<meta property="og:image" content="https://BREAKPOINT_DOMAIN/assets/og-home.png">
+<meta property="og:url" content="https://BREAKPOINT_DOMAIN/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BreakPoint Insight | Independent Water Science and Engineering">
+<meta name="twitter:description" content="Independent water science, engineering, technical assurance and decision intelligence for difficult, high-consequence infrastructure decisions.">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://BREAKPOINT_DOMAIN/">
+<meta name="theme-color" content="#F7F8F5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F8F5; --mist:#E9EFEC; --ink:#102131; --navy:#091923; --ink-2:#46545D; --mute:#6B7780;
+    --teal:#236B70; --teal-2:#174D52; --amber:#D18A1B; --line:#D5DDDA;
+    --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+    --body:"Inter","Helvetica Neue",Arial,sans-serif;
+    --max:1180px; --pad:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  h1,h2,h3{margin:0;font-family:var(--display);font-weight:500;letter-spacing:-.02em;line-height:1.08}
+  h3{font-weight:600;letter-spacing:-.01em}
+  p{margin:0 0 1em}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+  :focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01em;white-space:nowrap}
+  .brand svg{width:26px;height:26px}
+  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:30px;font-size:15px;font-weight:500}
+  nav ul a{text-decoration:none;color:var(--ink-2)}
+  nav ul a:hover{color:var(--ink)}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .li{color:var(--ink-2);display:inline-flex}.li svg{width:22px;height:22px}.li:hover{color:var(--teal)}
+  .btn{display:inline-block;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--ink);color:var(--ink);background:transparent;transition:background .15s,color .15s}
+  .btn:hover{background:var(--ink);color:var(--paper)}
+  .btn.solid{background:var(--ink);color:var(--paper)}
+  .btn.solid:hover{background:var(--teal-2);border-color:var(--teal-2)}
+  @media(max-width:900px){nav ul{display:none}.brand{font-size:17px;white-space:nowrap}.nav-right .btn{padding:9px 12px;font-size:14px;white-space:nowrap}.nav-right{gap:10px}.nav-right .li{display:none}}
+  /* HERO */
+  .hero{position:relative;overflow:hidden}
+  .hero .wrap{position:relative;min-height:min(78vh,700px);display:flex;flex-direction:column;justify-content:flex-end;padding-top:80px;padding-bottom:72px}
+  .hero-curve{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .hero h1{font-size:clamp(40px,6.4vw,88px);line-height:.97;letter-spacing:-.03em;max-width:12ch;font-variation-settings:"opsz" 96}
+  .hero .lede{font-size:clamp(17px,1.5vw,20px);color:var(--ink-2);max-width:46ch;margin:28px 0 32px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  /* PROOF BAND */
+  .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--mist)}
+  .proof ul{list-style:none;margin:0;padding:18px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:14px;color:var(--ink-2)}
+  .proof strong{display:block;font-family:var(--display);font-size:17px;font-weight:600;color:var(--ink)}
+  @media(max-width:760px){.proof ul{grid-template-columns:1fr 1fr}}
+  /* SECTIONS */
+  section{padding:clamp(64px,8.5vw,112px) 0}
+  section.mist{background:var(--mist)}
+  section.dark{background:var(--navy);color:#fff}
+  section.dark h2{color:#fff}
+  section.dark .kicker{color:#7FC3CD}
+  section.dark .measure{color:#B9C5C2}
+  .kicker{font-family:var(--display);font-size:15px;font-weight:600;color:var(--teal);margin-bottom:18px}
+  h2{font-size:clamp(30px,3.6vw,46px);max-width:22ch}
+  .measure{max-width:60ch;font-size:17.5px;color:var(--ink-2)}
+  .two{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px)}
+  @media(max-width:860px){.two{grid-template-columns:1fr}}
+  .more{margin-top:32px;font-size:15px;font-weight:500}
+  .more a{color:var(--teal);text-decoration:none;border-bottom:1px solid currentColor}
+  /* PROMISES + PROBLEMS */
+  .promises{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1px solid var(--ink)}
+  .promise{padding:28px 28px 8px 0;border-right:1px solid var(--line)}
+  .promise:last-child{border-right:0}
+  .promise h3{font-family:var(--display);font-size:26px;margin-bottom:12px}
+  .promise p{font-size:16px;color:var(--ink-2)}
+  @media(max-width:860px){.promises{grid-template-columns:1fr}.promise{border-right:0;border-bottom:1px solid var(--line)}}
+  .problems{margin:56px 0 0;padding:0;list-style:none}
+  .problems li{padding:22px 0;border-top:1px solid var(--line);font-family:var(--display);font-size:clamp(20px,2.2vw,26px);font-weight:500;letter-spacing:-.015em;max-width:30ch}
+  /* SERVICES */
+  .practices{margin-top:56px;border-top:1px solid var(--ink)}
+  .practice{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,4fr) minmax(0,6fr);gap:32px;padding:26px 0;border-bottom:1px solid var(--line)}
+  .practice h3{font-family:var(--display);font-size:22px}
+  .practice .q{font-size:16px;color:var(--teal);font-weight:500;font-style:italic}
+  .practice p{font-size:15.5px;color:var(--ink-2);margin:0}
+  @media(max-width:860px){.practice{grid-template-columns:1fr;gap:8px}}
+  .fit{margin-top:40px;max-width:64ch;font-size:16px;color:var(--ink-2);padding-left:20px;border-left:2px solid var(--teal)}
+  /* ENGAGEMENTS */
+  .engage{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px);margin-top:48px}
+  .eng{padding-top:18px;border-top:2px solid var(--teal)}
+  .eng h3{font-family:var(--display);font-size:20px;margin-bottom:8px}
+  .eng p{font-size:15px;color:var(--ink-2);margin:0 0 8px}
+  .eng .out{font-size:14px;color:var(--ink);font-weight:500}
+  @media(max-width:1000px){.engage{grid-template-columns:1fr 1fr}}@media(max-width:560px){.engage{grid-template-columns:1fr}}
+  .envelope{margin-top:56px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:center}
+  .envelope svg{width:100%;height:auto}
+  .envelope h3{font-family:var(--display);font-size:24px;margin-bottom:12px}
+  .envelope p{font-size:16px;color:var(--ink-2)}
+  @media(max-width:860px){.envelope{grid-template-columns:1fr}}
+  /* REASON (dark) */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;border-top:1px solid rgba(255,255,255,.25)}
+  .step{padding:22px 20px 4px 0;border-right:1px solid rgba(255,255,255,.14)}
+  .step:last-child{border-right:0}
+  .step h3{font-family:var(--display);font-size:22px;margin-bottom:8px;color:#fff}
+  .step p{font-size:15px;color:#B9C5C2}
+  @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.step{border-right:0;border-bottom:1px solid rgba(255,255,255,.14)}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .track{position:relative;height:2px;background:rgba(255,255,255,.2);margin:40px 0 0}
+  .track .dot{position:absolute;top:-6px;left:0;width:14px;height:14px;border-radius:50%;background:var(--amber);transform:translateX(-50%);transition:left .12s linear}
+  .classes{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  .cls{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#E6ECEA}
+  .cls i{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;font-style:normal;font-family:var(--display);font-weight:700;font-size:12.5px}
+  .cls .m{background:#fff;color:var(--navy)}
+  .cls .c{background:var(--teal);color:#fff}
+  .cls .l{border:1.5px solid #7FC3CD;color:#7FC3CD}
+  .cls .mo{background:#3C4A55;color:#fff}
+  .cls .i{border:1.5px dotted #B9C5C2;color:#B9C5C2}
+  .cls .a{border:1.5px solid var(--amber);color:var(--amber)}
+  .cls .h{background:rgba(255,255,255,.12);color:#B9C5C2}
+  /* EXPERIENCE */
+  .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);margin-top:48px}
+  .case{padding-top:20px;border-top:1px solid var(--ink)}
+  .case .scale{font-family:var(--display);font-size:22px;font-weight:600;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px}
+  .case h3{font-family:var(--body);font-size:15px;font-weight:600;color:var(--teal);margin-bottom:10px}
+  .case p{font-size:15px;color:var(--ink-2)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{font-size:13px;padding:4px 9px;border:1px solid var(--line);border-radius:4px;color:var(--ink-2);font-weight:500}
+  @media(max-width:900px){.cases{grid-template-columns:1fr}}
+  /* PRODUCTS (dark) */
+  .products{background:var(--navy);color:var(--paper)}
+  .products h2{color:#fff}.products .measure{color:#B9C5C2}.products .kicker{color:#7FC3CD}
+  .cycle{margin-top:64px;position:relative}
+  .cycle-line{height:2px;background:#7FC3CD;position:relative;margin:0 0 -1px}
+  .cycle-line::before,.cycle-line::after{content:"";position:absolute;top:-4px;width:10px;height:10px;border-radius:50%;background:#7FC3CD}
+  .cycle-line::before{left:0}.cycle-line::after{right:0}
+  .cycle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .prod{padding:36px 28px 32px 0;border-right:1px solid rgba(255,255,255,.14);position:relative}
+  .prod:last-child{border-right:0}
+  .prod::before{content:"";position:absolute;top:-6px;left:0;width:12px;height:12px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px var(--navy)}
+  .prod .stage{font-size:14px;color:#8FA0A9;margin-bottom:14px}
+  .prod h3{font-family:var(--display);font-size:30px;letter-spacing:-.015em;margin-bottom:6px;color:#fff}
+  .prod .dom{font-size:15.5px;color:#7FC3CD;font-weight:500;margin-bottom:14px}
+  .prod p{font-size:15px;color:#C9D3D0;margin-bottom:16px}
+  .status{display:inline-block;font-size:13px;font-weight:600;padding:5px 10px;border-radius:4px;border:1px solid rgba(255,255,255,.25);color:#E6ECEA}
+  .status.live{background:#fff;border-color:#fff;color:var(--navy)}
+  .cycle-note{margin-top:48px;font-size:15px;color:#8FA0A9;max-width:60ch}
+  @media(max-width:920px){.cycle-grid{grid-template-columns:1fr 1fr}.prod{border-right:0;padding-right:0}.prod:nth-child(odd){padding-right:28px}}
+  @media(max-width:520px){.cycle-grid{grid-template-columns:1fr}.prod:nth-child(odd){padding-right:0}}
+  /* INSIGHTS */
+  .insights{margin-top:48px;border-top:1px solid var(--ink)}
+  .ins{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;padding:22px 0;border-bottom:1px solid var(--line)}
+  .ins h3{font-family:var(--display);font-size:22px;font-weight:500}
+  .ins p{font-size:15px;color:var(--ink-2);margin:0}
+  .ins .soon{font-size:13px;color:var(--mute);font-weight:500}
+  @media(max-width:760px){.ins{grid-template-columns:1fr;gap:6px}}
+  /* PARTNERS */
+  .partners{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);margin-top:48px}
+  .partner .portrait{aspect-ratio:4/5;max-width:220px;background:linear-gradient(160deg,#C9D3D0,#9FB0AC);border-radius:8px;display:grid;place-items:center;color:var(--ink-2);font-size:14px}
+  .partner h3{font-family:var(--display);font-size:28px;margin-top:24px}
+  .partner h3 a{text-decoration:none}
+  .partner .role{color:var(--teal);font-weight:500;margin:4px 0 14px}
+  .partner p{font-size:16px;color:var(--ink-2)}
+  @media(max-width:860px){.partners{grid-template-columns:1fr}}
+  .intersect{width:100%;max-width:520px;height:auto;justify-self:end}
+  @media(max-width:860px){.intersect{justify-self:start}}
+  /* CONTACT (dark) */
+  .contact h2{max-width:18ch;color:#fff}
+  .contact-card{padding:32px;border:1.5px solid rgba(255,255,255,.35);border-radius:8px;font-size:17px;color:#fff}
+  .contact-card a{text-decoration:none;font-weight:600;color:#fff}
+  .contact-card a:hover{text-decoration:underline}
+  .contact-card div{margin-bottom:12px}
+  .contact-card small{display:block;color:#8FA0A9;font-size:14px;margin-bottom:2px}
+  footer{border-top:1px solid var(--line);padding:32px 0;font-size:14px;color:var(--mute)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  /* motion */
+  .draw{stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 2.6s cubic-bezier(.6,0,.2,1) .2s forwards}
+  .pt{opacity:0;animation:pop .5s ease 2.5s forwards}
+  .lbl{opacity:0;animation:pop .6s ease 2.9s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes pop{to{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.draw,.pt,.lbl{animation:none;stroke-dashoffset:0;opacity:1}html{scroll-behavior:auto}.track .dot{transition:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="BreakPoint Insight home">
+      <svg viewBox="0 0 26 26" aria-hidden="true"><path d="M2 20 L10 14 L14 17 L24 5" fill="none" stroke="#102131" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="17" r="3" fill="#D18A1B"/></svg>
+      BreakPoint Insight
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="li" href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener" aria-label="BreakPoint Insight on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      <a class="btn" href="#contact">Discuss a problem</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="hero-curve" viewBox="0 0 1400 720" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#236B70" stop-opacity=".18"/><stop offset="1" stop-color="#236B70" stop-opacity=".55"/></linearGradient></defs>
+    <g stroke="#D5DDDA" stroke-width="1"><line x1="0" y1="640" x2="1400" y2="640"/><line x1="0" y1="520" x2="1400" y2="520"/><line x1="0" y1="400" x2="1400" y2="400"/><line x1="0" y1="280" x2="1400" y2="280"/><line x1="0" y1="160" x2="1400" y2="160"/></g>
+    <path class="draw" d="M 0 560 C 220 420, 420 330, 620 380 C 760 420, 820 560, 900 600 C 960 630, 1000 600, 1060 500 C 1160 330, 1280 180, 1400 90" fill="none" stroke="url(#fade)" stroke-width="3.5" stroke-linecap="round"/>
+    <g class="pt"><circle cx="905" cy="602" r="22" fill="#D18A1B" opacity=".18"/><circle cx="905" cy="602" r="7" fill="#D18A1B"/></g>
+    <g class="lbl" font-family="Inter, sans-serif" font-size="14" fill="#6B7780"><line x1="905" y1="602" x2="905" y2="664" stroke="#D18A1B" stroke-width="1.2" stroke-dasharray="3 3"/><text x="905" y="686" text-anchor="middle">the breakpoint</text></g>
+  </svg>
+  <div class="wrap">
+    <h1>When the answer matters and conventional analysis isn't enough.</h1>
+    <p class="lede">Independent water science, engineering and decision intelligence for difficult, high-consequence infrastructure decisions.</p>
+    <div class="hero-actions">
+      <a class="btn solid" href="#contact">Discuss a difficult problem</a>
+      <a class="btn" href="#engagements">Explore our engagements</a>
+    </div>
+  </div>
+</header>
+
+<div class="proof"><div class="wrap"><ul>
+  <li><strong>Four decades</strong>water science and process engineering</li>
+  <li><strong>Bench to board paper</strong>research, operations, design, assurance</li>
+  <li><strong>FRSC, MPhil</strong>chemistry and water science; published researcher</li>
+  <li><strong>UK, Australia, NZ</strong>major utility infrastructure</li>
+</ul></div></div>
+
+<section id="promises">
+  <div class="wrap">
+    <div class="two">
+      <div><div class="kicker">What we do</div><h2>Three promises.</h2></div>
+      <p class="measure">We help asset owners make difficult technical decisions where the consequences are large, the evidence is incomplete and the standard calculations don't settle it.</p>
+    </div>
+    <div class="promises">
+      <div class="promise"><h3>Solve difficult problems</h3><p>Deep water science and engineering where the mechanism, or the solution, isn't obvious.</p></div>
+      <div class="promise"><h3>Challenge important decisions</h3><p>Independent technical red team and assurance for high-consequence infrastructure decisions.</p></div>
+      <div class="promise"><h3>Turn evidence into decisions</h3><p>Recommendations that are transparent, repeatable and defensible, with every assumption on the page.</p></div>
+    </div>
+    <ul class="problems">
+      <li>The design says it should work. The plant says otherwise.</li>
+      <li>The investment case depends on an assumption nobody has properly tested.</li>
+      <li>The plant can reach the flow. Can it reliably meet its treatment obligations?</li>
+    </ul>
+  </div>
+</section>
+
+<section id="services" class="mist">
+  <div class="wrap">
+    <div class="two">
+      <div><div class="kicker">Services</div><h2>Five practices. One discipline.</h2></div>
+      <p class="measure">Each practice answers a different client question. The consulting generates cases and evidence, the cases sharpen the methods, and the methods become the products.</p>
+    </div>
+    <div class="practices">
+      <div class="practice"><h3>Process Science and Engineering</h3><div class="q">"We have a difficult treatment or process problem."</div><p>Investigation, treatment science, modelling, forensic failure investigation, capacity and operating envelope, intensification, process selection, hydraulic and computational analysis, optimisation. Across the whole water cycle.</p></div>
+      <div class="practice"><h3>Independent Assurance</h3><div class="q">"Does this design, claim or investment stack up?"</div><p>Technical red team, peer review, design verification, technology and vendor-claim assurance, performance testing and commissioning verification, expert witness.</p></div>
+      <div class="practice"><h3>Decision Intelligence</h3><div class="q">"We have the data but don't know what it means."</div><p>Operational analytics with physical interpretation. Data reveals the pattern. Process science tests the mechanism.</p></div>
+      <div class="practice"><h3>Applied Research and Technical Investigations</h3><div class="q">"The answer isn't established."</div><p>Taking unresolved science far enough to support an engineering decision, led by practitioners with backgrounds in both peer-reviewed research and full-scale delivery.</p></div>
+      <div class="practice"><h3>Decision Products</h3><div class="q">"We need repeatable decision capability."</div><p>WaterPoint, AquaPoint, BioPoint and PurePoint: structured decision engines for the water cycle.</p></div>
+    </div>
+    <p class="fit">We work alongside asset owners, designers and major consultancies where relatively few technical decisions carry a disproportionate share of the risk. We complement the project team rather than replace it.</p>
+  </div>
+</section>
+
+<section id="engagements">
+  <div class="wrap">
+    <div class="two">
+      <div><div class="kicker">Engagements</div><h2>Defined engagements with clear outcomes.</h2></div>
+      <p class="measure">Where a problem fits a repeatable pattern, we offer named engagements with a defined scope and deliverable. Bespoke specialist and advisory assignments where the question demands it.</p>
+    </div>
+    <div class="engage">
+      <div class="eng"><h3>Diagnostic</h3><p>Forensic investigation and root-cause diagnosis of operational, process and performance problems.</p><div class="out">Mechanism, evidence, confidence, corrective options ranked.</div></div>
+      <div class="eng"><h3>Red Team</h3><p>Independent technical challenge of a design, technology or investment proposition.</p><div class="out">Finding, evidence, confidence, consequence, required action.</div></div>
+      <div class="eng"><h3>Capacity</h3><p>The operating envelope within which a plant can reliably meet its obligations, rather than only whether it can reach a flow.</p><div class="out">Nominal, theoretical, demonstrated, constrained and resilient capacity.</div></div>
+      <div class="eng"><h3>Evidence</h3><p>Prospective. Build the evidence, assumption and uncertainty framework a major decision needs before it is made.</p><div class="out">A decision record a board or regulator can interrogate line by line.</div></div>
+      <div class="eng"><h3>Optimise</h3><p>Operational-data-led process optimisation.</p><div class="out">Quantified opportunities in dosing, energy, throughput and compliance margin.</div></div>
+      <div class="eng"><h3>Decision Audit</h3><p>Retrospective. Test whether the evidence already assembled actually supports the decision being requested.</p><div class="out">Decision claim, evidence, assumptions, uncertainty, alternatives, robustness.</div></div>
+      <div class="eng"><h3>Technology Assessment</h3><p>Independent evaluation of an emerging or vendor technology across technology, evidence and commercial readiness.</p><div class="out">Claims classified as supported, conditional or refuted.</div></div>
+    </div>
+    <div class="envelope">
+      <div>
+        <h3>Capacity is an envelope, not a number.</h3>
+        <p>A rated capacity says what a plant can pass. The operating envelope says where it can reliably meet its treatment obligations, which constraint governs each edge, and how well each edge is known. We start with the operating record, not the design.</p>
+      </div>
+      <svg viewBox="0 0 560 330" role="img" aria-label="Operating envelope: flow against influent load, with the constraint governing each edge and the evidence class of each edge">
+        <defs>
+          <style>.ax{font-family:Inter,sans-serif;font-size:12px;fill:#6B7780}.lb{font-family:Inter,sans-serif;font-size:12.5px;fill:#46545D}.bd{font-family:"Bricolage Grotesque",sans-serif;font-size:10.5px;font-weight:700}</style>
+        </defs>
+        <line x1="60" y1="270" x2="530" y2="270" stroke="#102131" stroke-width="1.2"/>
+        <line x1="60" y1="270" x2="60" y2="30" stroke="#102131" stroke-width="1.2"/>
+        <text x="295" y="300" text-anchor="middle" class="ax">flow</text>
+        <text x="22" y="150" text-anchor="middle" transform="rotate(-90 22 150)" class="ax">influent load</text>
+        <rect x="60" y="60" width="420" height="210" fill="#236B70" fill-opacity=".06"/>
+        <text x="472" y="76" text-anchor="end" class="lb">nominal</text>
+        <path d="M 60 270 L 60 120 L 200 120 C 250 120, 285 150, 330 175 C 355 190, 372 230, 380 270 Z" fill="#236B70" fill-opacity=".22"/>
+        <path d="M 60 120 L 200 120" fill="none" stroke="#236B70" stroke-width="2.2"/>
+        <path d="M 200 120 C 250 120, 285 150, 330 175" fill="none" stroke="#236B70" stroke-width="2.2" stroke-dasharray="6 4"/>
+        <path d="M 330 175 C 355 190, 372 230, 380 270" fill="none" stroke="#236B70" stroke-width="2.2"/>
+        <rect x="90" y="185" width="150" height="60" rx="4" fill="#fff" fill-opacity=".55"/>
+        <text x="165" y="209" text-anchor="middle" class="lb" style="fill:#174D52;font-weight:600">current operating region</text>
+        <text x="165" y="229" text-anchor="middle" class="lb" style="fill:#174D52">demonstrated</text>
+        <text x="130" y="108" class="lb">solids and residuals constraint</text>
+        <text x="300" y="148" class="lb">chemistry and contact time</text>
+        <text x="396" y="226" class="lb">hydraulic constraint</text>
+        <text x="396" y="262" class="lb" style="fill:#6B7780">operational limit</text>
+        <g class="bd"><rect x="112" y="112" width="18" height="16" rx="3" fill="#102131"/><text x="121" y="124" text-anchor="middle" fill="#fff">M</text></g>
+        <g class="bd"><rect x="262" y="128" width="20" height="16" rx="3" fill="#3C4A55"/><text x="272" y="140" text-anchor="middle" fill="#fff">Mo</text></g>
+        <g class="bd"><rect x="352" y="196" width="18" height="16" rx="3" fill="#236B70"/><text x="361" y="208" text-anchor="middle" fill="#fff">C</text></g>
+        <g class="bd"><rect x="372" y="244" width="18" height="16" rx="3" fill="none" stroke="#D18A1B" stroke-width="1.5"/><text x="381" y="256" text-anchor="middle" fill="#D18A1B">A</text></g>
+        <line x1="380" y1="270" x2="380" y2="60" stroke="#D18A1B" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <circle cx="380" cy="270" r="6" fill="#D18A1B"/>
+        <text x="388" y="52" fill="#D18A1B" class="lb" style="font-weight:600">binding constraint</text>
+        <g class="ax"><text x="60" y="322">M measured · C calculated · Mo modelled · A assumed</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="reason" class="dark">
+  <div class="wrap">
+    <div class="two">
+      <div><div class="kicker">How we reason</div><h2>The same five steps, every time.</h2></div>
+      <p class="measure">BreakPoint does not start with the model. It starts with the physical system and the evidence. The hard part is evidence-calibrated judgement: knowing which variable matters, which calculation misleads, when literature transfers, and what evidence would actually settle the question.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Frame</h3><p>Define the decision, its consequences and what would change it.</p></div>
+      <div class="step"><h3>Evidence</h3><p>Assemble what is known and classify every item by how it is known.</p></div>
+      <div class="step"><h3>Reason</h3><p>Apply water science, engineering analysis and modelling to the evidence.</p></div>
+      <div class="step"><h3>Challenge</h3><p>Which assumption is load-bearing? Where is absence of evidence posing as adequacy?</p></div>
+      <div class="step"><h3>Decide</h3><p>State the recommendation, its confidence, its conditions and the evidence that would close the gap.</p></div>
+    </div>
+    <div class="track" aria-hidden="true"><div class="dot" id="dot"></div></div>
+    <p class="measure" style="margin-top:36px">Every decision-relevant claim carries its evidence class, and a claim cannot move up the list without new evidence:</p>
+    <div class="classes">
+      <span class="cls"><i class="m">M</i>Measured</span>
+      <span class="cls"><i class="c">C</i>Calculated</span>
+      <span class="cls"><i class="l">L</i>Literature-supported</span>
+      <span class="cls"><i class="mo">Mo</i>Modelled</span>
+      <span class="cls"><i class="i">I</i>Inferred</span>
+      <span class="cls"><i class="a">A</i>Assumed</span>
+      <span class="cls"><i class="h">H</i>Heuristic</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <div class="kicker">Selected experience of our principals</div>
+        <h2>The difficult questions, over four decades.</h2>
+      </div>
+      <p class="measure">Selected projects from our principals' careers, each mapped to a BreakPoint engagement. Delivered in previous roles; not represented as BreakPoint deliveries.</p>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div class="scale">120 ML/d water treatment plant</div>
+        <h3>Independent technical challenge</h3>
+        <p>Process subject-matter expert to the owner through an early contractor involvement process: challenging the proponents' solutions and building the owner's confidence in what was proposed before commitment.</p>
+        <div class="tags"><span>BreakPoint Red Team</span></div>
+      </article>
+      <article class="case">
+        <div class="scale">750 ML/d pretreatment plant</div>
+        <h3>Value engineering at scale</h3>
+        <p>Value engineering lead: challenging the base design, developing alternatives, and optimising whole-of-life cost and layout for one of Australia's largest water treatment facilities.</p>
+        <div class="tags"><span>BreakPoint Red Team</span><span>BreakPoint Evidence</span></div>
+      </article>
+      <article class="case">
+        <div class="scale">Direct potable reuse, Antarctica</div>
+        <h3>Research translated to an engineering decision</h3>
+        <p>Multi-barrier direct potable reuse from sewage for a remote research station, including quantitative microbial risk assessment and online validation approaches for microbial and chemical contaminants.</p>
+        <div class="tags"><span>Applied Research</span></div>
+      </article>
+      <article class="case">
+        <div class="scale">Disinfection plant failure</div>
+        <h3>Failure investigation</h3>
+        <p>Appointed to investigate a loss of disinfection at a major supply and support the subsequent incident management: mechanism, evidence and the actions required.</p>
+        <div class="tags"><span>BreakPoint Diagnostic</span></div>
+      </article>
+      <article class="case">
+        <div class="scale">Ozone and biological activated carbon retrofit</div>
+        <h3>Process science in an operating plant</h3>
+        <p>Integration of ozone/BAC into a major existing treatment plant, including identification of a siphon-based backwash solution to prevent loss of carbon media.</p>
+        <div class="tags"><span>Process Science</span></div>
+      </article>
+      <article class="case">
+        <div class="scale">Biosolids carbonisation</div>
+        <h3>Technology assessment</h3>
+        <p>Technology assessment methodology, supplier engagement, technical solution development and whole-of-life cost assessment for an emerging thermal biosolids technology, covering technology, evidence and commercial readiness.</p>
+        <div class="tags"><span>BreakPoint Technology Assessment</span></div>
+      </article>
+    </div>
+    <p class="more"><a href="/peter-hillis">Full experience on the principals' pages</a></p>
+  </div>
+</section>
+
+
+<section id="products" class="products">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <div class="kicker">Decision products</div>
+        <h2>The products underneath the work.</h2>
+      </div>
+      <p class="measure">The tools don't attempt to replace experienced judgement. They are the product of trying to capture, test and transfer what four decades of that judgement has taught us. Four decision engines apply BreakPoint reasoning to the water cycle. We use them inside our engagements today; utility and consultancy licensing follows as each product's validation record matures. Every product carries a stated evidence basis, calibration cases, known limitations, version history and change control.</p>
+    </div>
+
+    <div class="cycle">
+      <div class="cycle-line"></div>
+      <div class="cycle-grid">
+        <article class="prod">
+          <div class="stage">Source to tap</div>
+          <h3>AquaPoint</h3>
+          <div class="dom">Drinking water treatment</div>
+          <p>Classifies source water, identifies the governing constraint, ranks treatment archetypes and tests candidate flowsheets across wet-season, algal, dry-season and custom scenarios.</p>
+          <span class="status">Built, pre-release</span>
+        </article>
+        <article class="prod">
+          <div class="stage">Collection to discharge</div>
+          <h3>WaterPoint</h3>
+          <div class="dom">Wastewater treatment and intensification</div>
+          <p>Screens technology eligibility, reasons over full process trains, models lifecycle cost, energy and residuals, and supports rapid multi-criteria and scenario analysis as assumptions change.</p>
+          <span class="status live">Live, flagship</span>
+        </article>
+        <article class="prod">
+          <div class="stage">Residuals to resource</div>
+          <h3>BioPoint</h3>
+          <div class="dom">Biosolids management and transition</div>
+          <p>Evaluates eleven pathways across thirteen analysis layers, classifies PFAS capability, models the pyrolysis envelope and tests vendor claims as supported, conditional or refuted.</p>
+          <span class="status">Built, pre-release</span>
+        </article>
+        <article class="prod">
+          <div class="stage">Effluent to reuse</div>
+          <h3>PurePoint</h3>
+          <div class="dom">Recycled and purified recycled water</div>
+          <p>Assesses scheme readiness against end-use class, log-reduction targets and contaminant evidence, and returns a Ready, Conditions or Not Ready verdict with the gaps to close.</p>
+          <span class="status">In development</span>
+        </article>
+      </div>
+      <p class="cycle-note">Future products will extend BreakPoint methodology to adjacent sectors where high-consequence decisions depend on the same kind of evidence, constraint and threshold reasoning.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="insights">
+  <div class="wrap">
+    <div class="two">
+      <div><div class="kicker">Insights</div><h2>How we think, in writing.</h2></div>
+      <p class="measure">Technical pieces on the questions that recur in high-consequence water decisions.</p>
+    </div>
+    <div class="insights">
+      <div class="ins"><h3><a href="/insight-not-demonstrated" style="text-decoration:none">Not demonstrated is not the same as adequate</a></h3><div><p>How absence of evidence gets laundered into evidence of adequacy, and how to stop it.</p><a class="soon" href="/insight-not-demonstrated" style="color:var(--teal)">Read</a></div></div>
+      <div class="ins"><h3><a href="/insight-demonstrated-capacity" style="text-decoration:none">What "demonstrated capacity" actually means</a></h3><div><p>Nominal, theoretical, demonstrated, constrained, resilient: five numbers that are routinely confused.</p><a class="soon" href="/insight-demonstrated-capacity" style="color:var(--teal)">Read</a></div></div>
+      <div class="ins"><h3>The load-bearing assumption</h3><div><p>Finding the one assumption your decision depends on, before someone else does.</p><span class="soon">Forthcoming</span></div></div>
+      <div class="ins"><h3>When a correct mass balance gives the wrong engineering answer</h3><div><p>Arithmetic that closes and a plant that doesn't.</p><span class="soon">Forthcoming</span></div></div>
+      <div class="ins"><h3>From pattern to mechanism</h3><div><p>Where data analytics stops and process science starts.</p><span class="soon">Forthcoming</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="mist">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <div class="kicker">About</div>
+        <h2>Process science, digital delivery.</h2>
+        <p class="measure">Two partners: a chemist who brings the process science judgement the products encode, and a chemical engineer who brings the digital and data capability that makes them usable at utility scale.</p>
+      </div>
+      <svg class="intersect" viewBox="0 0 520 220" aria-label="Process science and digital and data meet in decision intelligence">
+        <g font-family="Inter, sans-serif">
+          <text x="20" y="48" font-size="17" font-weight="600" fill="#102131">Process science</text>
+          <text x="20" y="70" font-size="14" fill="#6B7780">physical system, mechanism, judgement</text>
+          <text x="20" y="176" font-size="17" font-weight="600" fill="#102131">Digital and data</text>
+          <text x="20" y="198" font-size="14" fill="#6B7780">data, systems, computation, scale</text>
+          <path d="M 300 52 C 360 52, 380 110, 420 110" fill="none" stroke="#236B70" stroke-width="1.6"/>
+          <path d="M 300 180 C 360 180, 380 122, 420 122" fill="none" stroke="#236B70" stroke-width="1.6"/>
+          <circle cx="428" cy="116" r="6" fill="#D18A1B"/>
+          <text x="444" y="112" font-size="17" font-weight="600" fill="#102131">Decision</text>
+          <text x="444" y="132" font-size="17" font-weight="600" fill="#102131">intelligence</text>
+        </g>
+      </svg>
+    </div>
+    <div class="partners">
+      <article class="partner">
+        <div class="portrait">Photo of Peter Hillis</div>
+        <h3><a href="/peter-hillis">Peter Hillis</a></h3>
+        <div class="role">Founder and Principal</div>
+        <p>Chemist and water process scientist with four decades in the water industry, from a North West Water laboratory in 1981 through research, process design and major-project technical leadership to independent technical challenge, across the whole water cycle in the UK, Australia and New Zealand. FRSC, MPhil (Cranfield), former Associate Editor of Water Research.</p>
+        <p class="more"><a href="/peter-hillis">Meet Peter</a></p>
+      </article>
+      <article class="partner">
+        <div class="portrait">Photo of Dr Brendan Gladman</div>
+        <h3><a href="/brendan-gladman">Dr Brendan Gladman</a></h3>
+        <div class="role">Partner, Digital and Data</div>
+        <p>Chemical engineer with a PhD from the University of Melbourne. Leads Decision Intelligence and the digital side of the products: the architecture that turns each framework into a deployable engine, the data pipelines that feed it, and the integrations that put BreakPoint outputs inside clients' existing systems.</p>
+        <p class="more"><a href="/brendan-gladman">Meet Brendan</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="dark contact">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <div class="kicker">Get in touch</div>
+        <h2>Make the decision before the threshold does.</h2>
+        <p class="measure">Talk to us about a difficult technical problem, an independent review, product access or a research partnership.</p>
+      </div>
+      <div class="contact-card">
+        <div><small>Email</small><a href="mailto:peter.hillis@ph2oconsult.com">peter.hillis@ph2oconsult.com</a></div>
+        <div><small>Phone</small><a href="tel:+61429202851">+61 429 202 851</a></div>
+        <div><small>LinkedIn</small><a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">BreakPoint Insight</a> and <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a></div>
+        <div><small>Based in</small>Melbourne, Victoria, Australia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Delivered in Australia through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>.</span>
+    <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var dot=document.getElementById('dot'),sec=document.getElementById('reason');
+  if(!dot||!sec||window.matchMedia('(prefers-reduced-motion: reduce)').matches){ if(dot) dot.style.left='100%'; return; }
+  function upd(){
+    var r=sec.getBoundingClientRect(),vh=window.innerHeight;
+    var p=(vh*0.75-r.top)/(r.height*0.7); p=Math.max(0,Math.min(1,p));
+    dot.style.left=(p*100)+'%';
+  }
+  window.addEventListener('scroll',upd,{passive:true}); upd();
+})();
+</script>
+</body>
+</html>
