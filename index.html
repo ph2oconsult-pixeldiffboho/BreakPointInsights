@@ -169,9 +169,15 @@
   .partner .role{color:var(--teal);font-weight:500;margin:4px 0 14px}
   .partner p{font-size:16px;color:var(--ink-2)}
   @media(max-width:860px){.partners{grid-template-columns:1fr}}
-  .intersect{width:100%;max-width:640px;height:auto;justify-self:end;overflow:visible}
-  #about .two>*{min-width:0}
-  #about .two{overflow:visible}
+  .intersect{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:0;width:100%;max-width:560px;justify-self:end}
+  .ix-left{display:flex;flex-direction:column;gap:56px}
+  .ix-item b{display:block;font-family:var(--body);font-weight:600;font-size:17px;color:var(--ink)}
+  .ix-item span{display:block;font-size:14px;color:var(--mute);margin-top:2px}
+  .ix-curves{width:100%;min-width:90px;height:160px;display:block}
+  .ix-right{display:flex;align-items:center;gap:12px;white-space:nowrap}
+  .ix-right i{width:12px;height:12px;border-radius:50%;background:var(--amber);flex:none}
+  .ix-right b{font-family:var(--body);font-weight:600;font-size:17px;line-height:1.2;color:var(--ink)}
+  @media(max-width:860px){.intersect{justify-self:start}.ix-left{gap:40px}.ix-curves{height:120px}}
   @media(max-width:860px){.intersect{justify-self:start}}
   /* CONTACT (dark) */
   .contact h2{max-width:18ch;color:#fff}
@@ -502,19 +508,17 @@
         <h2>Process science, digital delivery.</h2>
         <p class="measure">Two partners: a chemist who brings the process science judgement the products encode, and a chemical engineer who brings the digital and data capability that makes them usable at utility scale.</p>
       </div>
-      <svg class="intersect" viewBox="0 0 640 220" overflow="visible" aria-label="Process science and digital and data meet in decision intelligence">
-        <g font-family="Inter, sans-serif">
-          <text x="20" y="48" font-size="17" font-weight="600" fill="#102131">Process science</text>
-          <text x="20" y="70" font-size="14" fill="#6B7780">physical system, mechanism, judgement</text>
-          <text x="20" y="176" font-size="17" font-weight="600" fill="#102131">Digital and data</text>
-          <text x="20" y="198" font-size="14" fill="#6B7780">data, systems, computation, scale</text>
-          <path d="M 290 52 C 350 52, 370 110, 410 110" fill="none" stroke="#236B70" stroke-width="1.6"/>
-          <path d="M 290 180 C 350 180, 370 122, 410 122" fill="none" stroke="#236B70" stroke-width="1.6"/>
-          <circle cx="418" cy="116" r="6" fill="#D18A1B"/>
-          <text x="434" y="112" font-size="17" font-weight="600" fill="#102131">Decision</text>
-          <text x="434" y="132" font-size="17" font-weight="600" fill="#102131">intelligence</text>
-        </g>
-      </svg>
+      <div class="intersect" aria-label="Process science and digital and data meet in decision intelligence">
+        <div class="ix-left">
+          <div class="ix-item"><b>Process science</b><span>physical system, mechanism, judgement</span></div>
+          <div class="ix-item"><b>Digital and data</b><span>data, systems, computation, scale</span></div>
+        </div>
+        <svg class="ix-curves" viewBox="0 0 140 160" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M 0 22 C 60 22, 80 80, 130 80" fill="none" stroke="#236B70" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+          <path d="M 0 138 C 60 138, 80 80, 130 80" fill="none" stroke="#236B70" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <div class="ix-right"><i></i><b>Decision<br>intelligence</b></div>
+      </div>
     </div>
     <div class="partners">
       <article class="partner">
