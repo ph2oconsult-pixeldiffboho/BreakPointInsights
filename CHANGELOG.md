@@ -2,6 +2,11 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.7.0 · 7 Sep 2026
+- Dr Charles Taylor, Partner, UK Water and Regulatory Science: homepage card, biography page (project outcomes, memberships and contact pending), three-way About diagram meeting at evidence-calibrated judgement, "In the United Kingdom" block.
+- Technology Assessment now four readiness tests: technology, evidence, regulatory, commercial. Independent Assurance mentions DWI Regulation 31.
+- Proof band "Australia and the United Kingdom"; contact card carries Australia and UK lines; footer states delivery through pH2O Consulting (AU) and Scienqua (UK).
+
 ## 1.6.0 · 7 Sep 2026
 - Engagement page /engagements/capacity: five capacities, envelope, two lenses, six stages, three tiers, pattern-level experience, engagement sheet download. Linked from the Capacity engagement card; enquiry form pre-selects capacity when arriving from the page.
 
