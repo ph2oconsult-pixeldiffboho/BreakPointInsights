@@ -18,7 +18,11 @@ Static site. No build step. Deployed on Vercel from this repository.
 4. Check product status labels on `index.html`.
 
 ## Deploy
-Push to GitHub, import the repository in Vercel (Framework preset: Other; no build command; output directory: `.`), add the domain under Project → Settings → Domains, and set the DNS records Vercel shows at the registrar.
+The remote is already configured: `origin` = https://github.com/ph2oconsult-pixeldiffboho/BreakPointInsights.git
+
+First push: `git push -u origin main`
+
+Then, import the repository in Vercel (Framework preset: Other; no build command; output directory: `.`), add the domain under Project → Settings → Domains, and set the DNS records Vercel shows at the registrar.
 
 ## Editing
 Each page is self-contained (CSS inline). Shared elements (nav, footer, tokens) are duplicated per page; change them in every file or keep them in sync with a search-and-replace. Design tokens are frozen; see the `:root` block at the top of each file.
