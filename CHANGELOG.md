@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.3.1 · 7 Sep 2026
+- "with every assumption on the page" becomes "with the assumptions that matter on the page", consistent with the evidence-class scoping.
+
 ## 1.3.0 · 7 Sep 2026
 - Insights moved to /insights/<slug> with an /insights/ archive page; old URLs redirect permanently. Done before indexing so no legacy URLs accumulate.
 - Mobile navigation: hamburger menu below 900px with all sections, the CTA and LinkedIn; keyboard and screen-reader accessible.
