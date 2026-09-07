@@ -17,6 +17,16 @@ Static site. No build step. Deployed on Vercel from this repository.
 3. Complete `brendan-gladman.html` (amber placeholder spans).
 4. Check product status labels on `index.html`.
 
+## Contact form (Web3Forms)
+The enquiry form posts to Web3Forms, which emails each submission to peter.hillis@ph2oconsult.com. No server code and no secret in the repo.
+1. Go to https://web3forms.com, enter peter.hillis@ph2oconsult.com, and confirm the email they send. They reply with an access key.
+2. Replace `WEB3FORMS_ACCESS_KEY` in `index.html` with that key. The key is safe to publish: it can only deliver to the registered address.
+3. Optional: in the Web3Forms dashboard, turn on spam filtering and set a redirect or autoresponder. The form already includes a honeypot field.
+Alternative if you would rather not use a third party: a Vercel serverless function with Resend or SendGrid, which needs an API key stored as a Vercel environment variable. Ask if you want that version.
+
+## WhatsApp
+The contact card links to https://wa.me/61429202851 with a pre-filled opening message. Change the number in `index.html` if a different WhatsApp account is used.
+
 ## Deploy
 The remote is already configured: `origin` = https://github.com/ph2oconsult-pixeldiffboho/BreakPointInsights.git
 
