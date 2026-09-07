@@ -2,6 +2,9 @@
 
 The version shown in the site footer and in `<meta name="version">` on every page is the one Vercel is serving. Compare it with this file to see whether the live site is current.
 
+## 1.7.1 · 7 Sep 2026
+- Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
+
 ## 1.7.0 · 7 Sep 2026
 - Dr Charles Taylor, Partner, UK Water and Regulatory Science: homepage card, biography page (project outcomes, memberships and contact pending), three-way About diagram meeting at evidence-calibrated judgement, "In the United Kingdom" block.
 - Technology Assessment now four readiness tests: technology, evidence, regulatory, commercial. Independent Assurance mentions DWI Regulation 31.
