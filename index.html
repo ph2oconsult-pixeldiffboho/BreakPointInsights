@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="version" content="1.9.0">
+<meta name="version" content="1.10.0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BreakPoint Insight | Independent Water Science and Engineering</title>
 <meta name="description" content="Independent water science, engineering, technical assurance and decision intelligence for difficult, high-consequence infrastructure decisions.">
@@ -105,6 +105,15 @@
   .problems{margin:56px 0 0;padding:0;list-style:none}
   .problems li{padding:22px 0;border-top:1px solid var(--line);font-family:var(--display);font-size:clamp(20px,2.2vw,26px);font-weight:500;letter-spacing:-.015em;max-width:30ch}
   /* SERVICES */
+  .moments{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:48px}
+  .moment{padding-top:20px;border-top:2px solid var(--ink)}
+  .moment .mm-k{font-family:var(--display);font-size:14px;font-weight:600;color:var(--teal);margin-bottom:8px}
+  .moment h3{font-family:var(--display);font-size:26px;margin-bottom:12px}
+  .moment p{font-size:16px;color:var(--ink-2)}
+  .moment ul{padding-left:18px;margin:0;font-size:15.5px;color:var(--ink-2)}
+  .moment li{margin-bottom:7px}.moment li::marker{color:var(--amber)}
+  .moment li b{color:var(--ink);font-weight:600}
+  @media(max-width:860px){.moments{grid-template-columns:1fr}}
   .practices{margin-top:56px;border-top:1px solid var(--ink)}
   .practice{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,4fr) minmax(0,6fr);gap:32px;padding:26px 0;border-bottom:1px solid var(--line)}
   .practice h3{font-family:var(--display);font-size:22px}
@@ -330,7 +339,40 @@
   </div>
 </section>
 
-<section id="services" class="mist">
+<section id="moments" class="mist">
+  <div class="wrap">
+    <div class="two">
+      <div><div class="kicker">Before the threshold</div><h2>Prepare for success. Minimise risk.</h2></div>
+      <p class="measure">Risk in infrastructure rarely arrives suddenly. It builds until a threshold is crossed and the outcome becomes inevitable; by then the options have narrowed and the cost of intervention has multiplied. Clients come to BreakPoint at two moments, and the engagements are arranged around them.</p>
+    </div>
+    <div class="moments">
+      <div class="moment">
+        <div class="mm-k">Before you commit</div>
+        <h3>Prepare for success</h3>
+        <p>An upgrade, a technology, a business case, a procurement. The evidence is still being assembled and the options are still open. This is where a few weeks of independent work changes the decision, and where it is cheapest to be right.</p>
+        <ul>
+          <li><b>Capacity</b>: know what the plant can actually do before you decide what to build.</li>
+          <li><b>Evidence</b>: build the evidence framework a major decision needs, before it is made.</li>
+          <li><b>Red Team</b>: have the proposition challenged before the board, the regulator or the market does.</li>
+          <li><b>Technology Assessment</b>: technology, evidence, regulatory and commercial readiness before adoption.</li>
+        </ul>
+      </div>
+      <div class="moment">
+        <div class="mm-k">When something is wrong</div>
+        <h3>Minimise risk</h3>
+        <p>A plant that will not perform as designed. A residual that keeps falling. A decision that is not surviving scrutiny. The cost of being wrong is now visible, and the question is what is actually happening and what to do about it.</p>
+        <ul>
+          <li><b>Diagnostic</b>: mechanism, evidence, confidence, corrective options ranked.</li>
+          <li><b>Decision Audit</b>: does the evidence already assembled support the decision being asked for?</li>
+          <li><b>Optimise</b>: recover performance and margin from the plant you have, from its own operating data.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="measure" style="margin-top:36px">Either way the method is the same: frame the decision, assemble the evidence and say how each item is known, reason, challenge, decide. <a href="#engagements" style="color:var(--teal)">The seven engagements</a>.</p>
+  </div>
+</section>
+
+<section id="services">
   <div class="wrap">
     <div class="two">
       <div><div class="kicker">Services</div><h2>Five practices. One discipline.</h2></div>
@@ -683,7 +725,7 @@
     <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Australian engagements are delivered through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>; UK engagements through Scienqua.</span>
     <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a> · <a href="/privacy">Privacy</a></span>
   </div>
-  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.9.0 · 8 Sep 2026</span></div>
+  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.10.0 · 8 Sep 2026</span></div>
 </footer>
 
 <script>

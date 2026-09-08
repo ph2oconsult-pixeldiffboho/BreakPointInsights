@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.10.0 · 8 Sep 2026
+- New homepage section "Prepare for success. Minimise risk.": the two moments clients engage, before a commitment and when something is wrong, with the seven engagements mapped onto them. Section rhythm adjusted (Services now on paper).
+
 ## 1.9.0 · 8 Sep 2026
 - Privacy statement at /privacy, linked from every footer and from the enquiry form. Entity names, ABN and UK company number are placeholders pending confirmation.
 
