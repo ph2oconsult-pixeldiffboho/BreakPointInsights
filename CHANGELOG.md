@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.10.1 · 8 Sep 2026
+- Privacy statement v1.1 after legal review: controllers identified (pH2O for the website and Australia, Scienqua for the UK), UK lawful bases, international transfer mechanism, expanded UK rights with the right to object, deletion exceptions, one-month response, breach wording, Australian framing. "Collected silently" removed.
+
 ## 1.10.0 · 8 Sep 2026
 - New homepage section "Prepare for success. Minimise risk.": the two moments clients engage, before a commitment and when something is wrong, with the seven engagements mapped onto them. Section rhythm adjusted (Services now on paper).
 
