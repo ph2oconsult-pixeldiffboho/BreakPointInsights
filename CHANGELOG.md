@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.8.6 · 8 Sep 2026
+- Audit fixes: single main landmark on the Capacity page; h1 on the Insights and Casework index pages and the 404; three meta descriptions trimmed under 160 characters.
+
 ## 1.8.5 · 8 Sep 2026
 - Brendan Gladman portrait replaced (environmental background, matching the other partners); new filename to bypass cache.
 
