@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.11.3 · 9 Sep 2026
+- ModelPoint chart: gridlines and axis extended to the full chart width; all labels set to bold white for contrast.
+
 ## 1.11.2 · 9 Sep 2026
 - ModelPoint figure rebuilt as two stacked charts: PAC dose (fixed vs adaptive, bars) and filtered-water geosmin outcome, with stronger colour separation (cyan actual line, red target line, amber dose bars) so the dose-reduction story is visible, not just the water-quality outcome.
 
