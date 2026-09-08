@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.11.1 · 9 Sep 2026
+- ModelPoint chart redrawn: axis labelled with numbers, target label no longer clips, legend moved below the plot instead of floating over it.
+
 ## 1.11.0 · 8 Sep 2026
 - ModelPoint added as the first Process Twin, a second decision-product family alongside the four decision engines. PAC dosing digital twin for geosmin, with the illustrative case and figures, clearly labelled illustrative. Status: built, pre-release.
 
