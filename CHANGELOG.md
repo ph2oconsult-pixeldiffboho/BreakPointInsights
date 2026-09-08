@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.8.5 · 8 Sep 2026
+- Brendan Gladman portrait replaced (environmental background, matching the other partners); new filename to bypass cache.
+
 ## 1.8.4 · 8 Sep 2026
 - Brendan Gladman portrait added. All three partner portraits now in place.
 
