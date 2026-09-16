@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.12.0 · 9 Sep 2026
+- Second case study added: "Quantified risk, defensible investment", a supply-demand and service-risk model for a pretreatment capacity decision (Peter Hillis, previous role). Linked from the Casework index and the homepage Experience section.
+
 ## 1.11.3 · 9 Sep 2026
 - ModelPoint chart: gridlines and axis extended to the full chart width; all labels set to bold white for contrast.
 
