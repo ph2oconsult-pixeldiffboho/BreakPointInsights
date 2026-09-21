@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.13.2 · 9 Sep 2026
+- "Quantified risk, defensible investment" case study substantially enriched against the full source material: replaced the flat four-item list with a connected five-box flow diagram (Raw-water quality → Plant production → Seasonal demand → Storage response → Service risk), matching the source presentation's actual visual structure. Added the specific sizing year (2051) and absolute capacity figure (132.5 ML/d) that were in the source speaker notes but not previously used. Added a paragraph on model-version provenance discipline. Expanded the stats row from two to three figures. Fixed a text-contrast bug in the new diagram (title text was invisible against its own box due to a CSS specificity conflict).
+
 ## 1.13.1 · 9 Sep 2026
 - "Casework" renamed to "Case Studies" in all visible text: nav (desktop and mobile), page titles, Open Graph/Twitter titles, and section kickers on all three case study pages. URL paths (/casework/...) unchanged to avoid breaking existing links and the sitemap.
 

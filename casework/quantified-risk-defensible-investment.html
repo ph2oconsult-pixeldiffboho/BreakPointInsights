@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="version" content="1.13.1">
+<meta name="version" content="1.13.2">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quantified risk, defensible investment | Case Studies | BreakPoint Insight</title>
 <meta name="description" content="A daily supply-demand model linking raw-water quality, plant production, demand and storage, used to size and stage a pretreatment upgrade against an agreed service-risk target.">
@@ -244,13 +244,9 @@
   .rc-fig{margin:2.4em 0;padding:24px;background:var(--mist);border-radius:8px}
   .rc-fig svg{width:100%;height:auto}
   .rc-fig figcaption{font-size:14px;color:var(--mute);margin-top:12px}
-  .elements{margin:2em 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink)}
-  .el{padding:18px 20px 4px 0;border-right:1px solid var(--line)}
-  .el:last-child{border-right:0}
-  .el b{display:block;font-family:var(--display);font-size:17px;font-weight:600;margin-bottom:4px}
-  .el span{font-size:13.5px;color:var(--mute)}
-  @media(max-width:760px){.elements{grid-template-columns:1fr 1fr}.el{border-right:0;border-bottom:1px solid var(--line)}}
-  @media(max-width:480px){.elements{grid-template-columns:1fr}}
+  .chain-fig{margin:2em 0;padding:24px;background:var(--mist);border-radius:8px}
+  .chain-fig svg{width:100%;height:auto}
+  .chain-fig figcaption{font-size:14px;color:var(--mute);margin-top:12px}
   .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:2em 0}
   .stat{padding-top:14px;border-top:2px solid var(--amber)}
   .stat b{display:block;font-family:var(--display);font-size:32px;font-weight:600;color:var(--ink)}
@@ -309,16 +305,60 @@
 
   <h2>An integrated supply-risk model</h2>
   <p>The alternative is to combine daily operating records with future demand and raw-water scenarios, and carry probability, duration and timing through every stage rather than collapsing it into a single design point.</p>
-  <div class="elements">
-    <div class="el"><b>Raw-water quality</b><span>Frequency, duration and timing of adverse conditions, not just their severity.</span></div>
-    <div class="el"><b>Plant production</b><span>Capacity as a function of the water quality actually being treated, not a single rated figure.</span></div>
-    <div class="el"><b>Seasonal demand</b><span>The daily demand profile and its growth, not just the annual peak.</span></div>
-    <div class="el"><b>Storage response</b><span>How storage draws down and recovers under each scenario, day by day.</span></div>
   </div>
-  <p>Carried through together, these produce a service-risk output: the probability, duration and severity of a supply shortfall, for any given capacity. An agreed service-risk target then gives a defensible basis for sizing and staging investment, in place of a single deterministic design case.</p>
+  <figure class="chain-fig"><svg viewBox="0 0 900 220" role="img" aria-label="Four inputs, raw-water quality, plant production, seasonal demand and storage response, combined daily and carried through to a service-risk output of probability, duration and severity">
+          <defs><style>.cf-t{font-family:Inter,sans-serif;font-size:13px;font-weight:600;fill:#102131}.cf-s{font-family:Inter,sans-serif;font-size:11.5px;fill:#46545D}.cf-tw{font-family:Inter,sans-serif;font-size:13px;font-weight:600;fill:#fff}.cf-sw{font-family:Inter,sans-serif;font-size:11.5px;fill:#C9D3D0}</style></defs>
+          <g>
+            <rect x="10" y="60" width="150" height="90" rx="8" fill="#fff" stroke="#D5DDDA" stroke-width="1.5"/>
+            <text x="85" y="95" text-anchor="middle" class="cf-t">Raw-water</text>
+            <text x="85" y="112" text-anchor="middle" class="cf-t">quality</text>
+            <text x="85" y="132" text-anchor="middle" class="cf-s">frequency, duration,</text>
+            <text x="85" y="146" text-anchor="middle" class="cf-s">timing</text>
+          </g>
+          <path d="M165 105 L193 105" stroke="#236B70" stroke-width="2" marker-end="url(#arrow)"/>
+          <g>
+            <rect x="198" y="60" width="150" height="90" rx="8" fill="#fff" stroke="#D5DDDA" stroke-width="1.5"/>
+            <text x="273" y="95" text-anchor="middle" class="cf-t">Plant</text>
+            <text x="273" y="112" text-anchor="middle" class="cf-t">production</text>
+            <text x="273" y="132" text-anchor="middle" class="cf-s">quality-linked</text>
+            <text x="273" y="146" text-anchor="middle" class="cf-s">capacity</text>
+          </g>
+          <path d="M353 105 L381 105" stroke="#236B70" stroke-width="2" marker-end="url(#arrow)"/>
+          <g>
+            <rect x="386" y="60" width="150" height="90" rx="8" fill="#fff" stroke="#D5DDDA" stroke-width="1.5"/>
+            <text x="461" y="95" text-anchor="middle" class="cf-t">Seasonal</text>
+            <text x="461" y="112" text-anchor="middle" class="cf-t">demand</text>
+            <text x="461" y="132" text-anchor="middle" class="cf-s">daily profile</text>
+            <text x="461" y="146" text-anchor="middle" class="cf-s">and growth</text>
+          </g>
+          <path d="M541 105 L569 105" stroke="#236B70" stroke-width="2" marker-end="url(#arrow)"/>
+          <g>
+            <rect x="574" y="60" width="150" height="90" rx="8" fill="#fff" stroke="#D5DDDA" stroke-width="1.5"/>
+            <text x="649" y="95" text-anchor="middle" class="cf-t">Storage</text>
+            <text x="649" y="112" text-anchor="middle" class="cf-t">response</text>
+            <text x="649" y="132" text-anchor="middle" class="cf-s">drawdown and</text>
+            <text x="649" y="146" text-anchor="middle" class="cf-s">recovery</text>
+          </g>
+          <path d="M729 105 L757 105" stroke="#D18A1B" stroke-width="2.5" marker-end="url(#arrow2)"/>
+          <g>
+            <rect x="762" y="50" width="128" height="110" rx="8" fill="#102131" stroke="#102131" stroke-width="1.5"/>
+            <text x="826" y="90" text-anchor="middle" class="cf-tw">Service</text>
+            <text x="826" y="107" text-anchor="middle" class="cf-tw">risk</text>
+            <text x="826" y="127" text-anchor="middle" class="cf-sw">probability,</text>
+            <text x="826" y="141" text-anchor="middle" class="cf-sw">duration, severity</text>
+          </g>
+          <text x="450" y="195" text-anchor="middle" class="cf-s">Combined daily, not layered as separate worst cases</text>
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#236B70"/></marker>
+            <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#D18A1B"/></marker>
+          </defs>
+        </svg><figcaption>Four inputs carried through daily, together, into a single service-risk output, rather than combined as separate worst cases layered on top of one another.</figcaption></figure>
+  <div class="body">
+  <p>Each input on its own answers a narrower question than the one that matters. Raw-water quality on its own says how often the source is difficult. Plant production on its own says what the plant can treat. Neither says whether the utility will actually meet its customers' expectations in a given year, because that depends on how the four interact, day by day, with the water already in storage. Carried through together, they produce a service-risk output: the probability, duration and severity of a supply shortfall, for any given capacity. An agreed service-risk target then gives a defensible basis for sizing and staging investment, in place of a single deterministic design case.</p>
 
   <h2>Capacity against risk</h2>
-  <p>The output is a curve, not a number: the annual probability of a conserve-water notice, plotted against pretreatment capacity as a proportion of the proposed upgrade. In the June 2026 example, the utility had adopted a target of no more than a 10 per cent annual chance of a conserve-water notice. Fifty per cent of the proposed pretreatment capacity was the smallest tested option that met it.</p>
+  <p>The output is a curve, not a number: the annual probability of a conserve-water notice, plotted against pretreatment capacity as a proportion of the proposed upgrade. In the June 2026 example, run for the 2051 sizing year, the utility had adopted a target of no more than a 10 per cent annual chance of a conserve-water notice. Fifty per cent of the proposed pretreatment capacity, around 132.5 ML/d, was the smallest tested option that met it.</p>
+  <p>The model exists in successive versions as the underlying data and assumptions are refined, and later versions have produced different conditional results for the same utility. The June 2026 figures below are from one specific, dated model run, are not to be combined with any other version, and are reported here as an illustration of the method rather than a current position. That discipline, knowing which model version a number came from and not mixing runs, is itself part of the evidence standard the approach is built to meet.</p>
   </div>
   <figure class="rc-fig"><svg viewBox="0 0 560 340" role="img" aria-label="Annual probability of a conserve-water notice against pretreatment capacity as a percentage of the proposed upgrade, from 0 to 100 percent, against a 10 percent target, with 50 percent marked as the smallest option that met the target">
           <defs><style>.rax{font-family:Inter,sans-serif;fill:#46545D}.rlb{font-family:Inter,sans-serif;fill:#102131;font-weight:600}</style></defs>
@@ -348,9 +388,10 @@
           <text x="290" y="20" text-anchor="middle" class="rax" font-size="12">pretreatment capacity, % of proposed upgrade</text>
         </svg><figcaption>Annual probability of a conserve-water notice against pretreatment capacity, with the adopted 10 per cent target and the smallest option that met it.</figcaption></figure>
   <div class="body">
-  <div class="stat-row">
+  <div class="stat-row" style="grid-template-columns:1fr 1fr 1fr">
     <div class="stat"><b>21.2% &rarr; 7.6%</b><span>Annual conserve-water notice risk, before and after the selected option.</span></div>
-    <div class="stat"><b>50%</b><span>Of the proposed pretreatment capacity: the smallest tested option below the target.</span></div>
+    <div class="stat"><b>132.5 ML/d</b><span>Around 50% of the proposed pretreatment capacity: the smallest tested option below the target.</span></div>
+    <div class="stat"><b>2051</b><span>Sizing year for this example: risk was tested against the demand and raw-water conditions expected by then, not today's.</span></div>
   </div>
 
   <h2>What it supported</h2>
@@ -372,7 +413,7 @@
     <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Australian engagements are delivered through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>; UK engagements through Scienqua.</span>
     <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a> · <a href="/privacy">Privacy</a></span>
   </div>
-  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.13.1 · 9 Sep 2026</span></div>
+  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.13.2 · 9 Sep 2026</span></div>
 </footer>
 <script>
 (function(){var b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');if(!b||!m)return;
