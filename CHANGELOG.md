@@ -5,6 +5,9 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
+## 1.13.0 · 9 Sep 2026
+- Casework added as a top-level nav item (desktop and mobile) on every page, next to Insights, so both case studies are reachable directly rather than via a small link under Experience. Fixed a mislabeled nav link on the Casework index page itself (linked to /casework/ but was labelled "Insights"; it now has correct separate Insights and Casework links).
+
 ## 1.12.1 · 9 Sep 2026
 - How we reason: one line added after the evidence-class badges clarifying that an evidence class is a judgement, not a rule a document passes or fails.
 
