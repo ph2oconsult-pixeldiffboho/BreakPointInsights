@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="version" content="1.13.2">
+<meta name="version" content="1.13.3">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case Studies | BreakPoint Insight</title>
 <meta name="description" content="Case studies of BreakPoint reasoning applied to real water infrastructure problems, with the evidence behind each finding stated.">
@@ -178,6 +178,23 @@
   .ins p{font-size:15px;color:var(--ink-2);margin:0}
   .ins .soon{font-size:13px;color:var(--mute);font-weight:500;display:inline-block;padding:8px 8px 8px 0;min-height:24px}
   @media(max-width:760px){.ins{grid-template-columns:1fr;gap:6px}}
+  /* CASE STUDY CARDS */
+  .study-cards{margin-top:48px;display:flex;flex-direction:column;gap:28px}
+  .study-card{display:grid;grid-template-columns:230px 1fr;border:1px solid var(--line);border-top:3px solid var(--amber);border-radius:10px;overflow:hidden;background:#fff}
+  .study-card .stat-panel{background:var(--mist);padding:32px 24px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line)}
+  .study-card .stat-panel b{display:block;font-family:var(--display);font-size:26px;font-weight:600;color:var(--ink);line-height:1.2;letter-spacing:-.01em}
+  .study-card .stat-panel span{display:block;font-size:12.5px;color:var(--mute);margin-top:10px;line-height:1.45}
+  .study-card .content-panel{padding:28px 32px}
+  .study-card h3{font-size:26px;font-weight:500;letter-spacing:-.02em;margin-bottom:10px}
+  .study-card h3 a{text-decoration:none;color:var(--ink)}
+  .study-card h3 a:hover{color:var(--teal)}
+  .study-card p{font-size:15.5px;color:var(--ink-2);margin:0 0 16px}
+  .study-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .study-card .tags span{font-size:12.5px;padding:4px 9px;border:1px solid var(--line);border-radius:4px;color:var(--teal);font-weight:500}
+  .study-card .by{font-size:13px;color:var(--mute)}
+  .study-card .read{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:14.5px;font-weight:600;color:var(--teal);text-decoration:none}
+  .study-card .read:hover{color:var(--teal-2)}
+  @media(max-width:700px){.study-card{grid-template-columns:1fr}.study-card .stat-panel{border-right:0;border-bottom:1px solid var(--line)}}
   /* PARTNERS */
   .partners{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);margin-top:48px}
   .partner .portrait{aspect-ratio:4/5;max-width:220px;background:linear-gradient(160deg,#C9D3D0,#9FB0AC);border-radius:8px;display:grid;place-items:center;color:var(--ink-2);font-size:14px}
@@ -278,9 +295,27 @@
     <div><div class="kicker">Case Studies</div><h1 style="font-size:clamp(30px,3.6vw,46px);max-width:22ch">What happens when the method meets a real problem.</h1></div>
     <p class="measure">Case studies written to the same standard as our reports: what the question was, how the system was reconstructed, what each finding rests on, and what remained uncertain. One case to begin with. We would rather show one rigorously than six superficially.</p>
   </div>
-  <div class="insights">
-      <div class="ins"><h3><a href="/casework/pipeline-is-the-reactor" style="text-decoration:none">The pipeline is the reactor</a></h3><div><p>A chloramine residual investigation commissioned as a mixing study. The evidence pointed to residence time, decay chemistry, the controller and the analyser instead.</p><span class="soon">Diagnostic · Decision Intelligence · Peter Hillis, previous role</span></div></div>
-      <div class="ins"><h3><a href="/casework/quantified-risk-defensible-investment" style="text-decoration:none">Quantified risk, defensible investment</a></h3><div><p>A daily supply-demand model that turned a capacity decision into a risk curve, sizing a pretreatment upgrade against an agreed service-risk target.</p><span class="soon">Capacity · Evidence · Peter Hillis, previous role</span></div></div>
+  <div class="study-cards">
+    <article class="study-card">
+      <div class="stat-panel"><b>24h &rarr; 40h</b><span>Reconstructed residence time, from flow records rather than the nominal design flow</span></div>
+      <div class="content-panel">
+        <h3><a href="/casework/pipeline-is-the-reactor">The pipeline is the reactor</a></h3>
+        <p>A chloramine residual investigation commissioned as a mixing study. The evidence pointed to residence time, decay chemistry, the controller and the analyser instead.</p>
+        <div class="tags"><span>Diagnostic</span><span>Decision Intelligence</span></div>
+        <div class="by">Peter Hillis, previous role</div>
+        <a class="read" href="/casework/pipeline-is-the-reactor">Read the case study &rarr;</a>
+      </div>
+    </article>
+    <article class="study-card">
+      <div class="stat-panel"><b>21.2% &rarr; 7.6%</b><span>Annual conserve-water notice risk, before and after the selected option</span></div>
+      <div class="content-panel">
+        <h3><a href="/casework/quantified-risk-defensible-investment">Quantified risk, defensible investment</a></h3>
+        <p>A daily supply-demand model that turned a capacity decision into a risk curve, sizing a pretreatment upgrade against an agreed service-risk target.</p>
+        <div class="tags"><span>Capacity</span><span>Evidence</span></div>
+        <div class="by">Peter Hillis, previous role</div>
+        <a class="read" href="/casework/quantified-risk-defensible-investment">Read the case study &rarr;</a>
+      </div>
+    </article>
   </div>
 </div></section>
 </main>
@@ -289,7 +324,7 @@
     <span>BreakPoint Insight · Independent water science, engineering and decision intelligence. Australian engagements are delivered through <a href="https://www.linkedin.com/company/ph2o-consulting/" target="_blank" rel="noopener">pH2O Consulting</a>; UK engagements through Scienqua.</span>
     <span>WaterPoint, AquaPoint, BioPoint and PurePoint are BreakPoint products. <a href="https://www.linkedin.com/company/breakpoint-insight/" target="_blank" rel="noopener">LinkedIn</a> · <a href="/privacy">Privacy</a></span>
   </div>
-  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.13.2 · 9 Sep 2026</span></div>
+  <div class="wrap" style="margin-top:10px"><span class="ver">Site version 1.13.3 · 9 Sep 2026</span></div>
 </footer>
 <script>
 (function(){var b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');if(!b||!m)return;
