@@ -5,7 +5,8 @@ The version shown in the site footer and in `<meta name="version">` on every pag
 ## 1.7.1 · 7 Sep 2026
 - Peter Hillis portrait added (homepage card and biography page), responsive sizes, alt text.
 
-## 1.13.3 · 9 Sep 2026
+## 1.13.3 · 9 Sep 2026 (corrected)
+- Fix: the 1.13.3 commit only updated the version stamp on casework/index.html; the other 15 pages were still marked 1.13.2, causing the footer to show different numbers on different pages. All pages now consistently stamped 1.13.3. · 9 Sep 2026
 - Case Studies index page redesigned. Replaced the plain text-row list (shared styling with the Insights list) with dedicated case-study cards: a pulled headline stat as the visual anchor (24h \u2192 40h; 21.2% \u2192 7.6%), amber top accent, engagement tags as pills, and a clear "Read the case study" link. The index now visually reflects the work inside each case study rather than looking like an ordinary list.
 
 ## 1.13.2 · 9 Sep 2026
